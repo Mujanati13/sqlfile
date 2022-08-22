@@ -1,13 +1,15 @@
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `block` (
   `id` int(11) NOT NULL,
   `blocklist` varchar(40) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `block`
---
+-- 
+-- SQLINES DEMO *** table `block`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `block` (`id`, `blocklist`) VALUES
 (1, '12.215.21'),
 (3, '192.168.1.112'),
@@ -17,12 +19,13 @@ INSERT INTO `block` (`id`, `blocklist`) VALUES
 (10, '192.168.1.112'),
 (12, '1.2152');
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `boot`
---
+-- 
+-- SQLINES DEMO *** or table `boot`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `boot` (
   `id` int(11) NOT NULL,
   `stats` varchar(40) DEFAULT NULL,
@@ -33,19 +36,21 @@ CREATE TABLE `boot` (
   `pin_room` varchar(50) DEFAULT NULL,
   `photo` varchar(50) DEFAULT NULL
 ) 
---
--- Dumping data for table `boot`
---
+-- 
+-- SQLINES DEMO *** table `boot`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `boot` (`id`, `stats`, `country`, `style`, `descri`, `likes`, `pin_room`, `photo`) VALUES
 (1, 'متصل', 'MR', '', '5000        ', 0, NULL, 'محمد');
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `clasment`
---
+-- 
+-- SQLINES DEMO *** or table `clasment`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `clasment` (
   `clasment_id` int(11) NOT NULL,
   `clasment_name` varchar(50) DEFAULT NULL,
@@ -77,21 +82,23 @@ CREATE TABLE `clasment` (
   `active_mic` varchar(50) DEFAULT NULL,
   `control_website` varchar(50) DEFAULT NULL
 ) 
---
--- Dumping data for table `clasment`
---
+-- 
+-- SQLINES DEMO *** table `clasment`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `clasment` (`clasment_id`, `clasment_name`, `clasment_number`, `group_name`, `clasment_icons`, `refus`, `remove_hanit`, `notifaction`, `change_nike`, `pand`, `ads`, `super_ads`, `open_private`, `room_menage`, `create_room`, `capacity_room_static`, `momber_setting`, `edite_powers`, `gifts`, `find_nikat`, `control_panel`, `close_room`, `private_join`, `likes`, `remove_message`, `momber_moves`, `left_mic`, `active_mic`, `control_website`) VALUES
 (24, 'Admin [1000]', 900, 'Admin [1000]', 'king.gif', 103, 'true', 'true', 'true', 'true        ', '102', 'true', 'true', 'true', 'true', '        ', 'true', 'true', '103', 'true', 'true', 'true', 'true', 'true', 'true', 'true        ', 'true        ', 'true', 'true'),
 (25, 'مشرف', 50, 'مشرف', 'z1burer85r10.gif', 103, 'true', 'true', 'true', 'true        ', '102', 'false', 'false', 'false', 'false', '        ', 'false', 'false', '103', 'false', 'false', 'false', 'false', 'false', 'false', 'false        ', 'false        ', 'false', 'false'),
 (26, ' 2 مشرف', 50, ' 2 مشرف', 'z1c3v37nog10.gif', 103, 'false', 'false', 'false', 'false        ', '102', 'false', 'false', 'false', 'false', '        ', 'false', 'false', '103', 'false', 'false', 'false', 'false', 'false', 'false', 'false        ', 'false        ', 'false', 'false');
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `messages`
---
+-- 
+-- SQLINES DEMO *** or table `messages`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `messages` (
   `message_id` int(11) NOT NULL,
   `title` varchar(50) DEFAULT NULL,
@@ -99,10 +106,11 @@ CREATE TABLE `messages` (
   `type` varchar(50) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `messages`
---
+-- 
+-- SQLINES DEMO *** table `messages`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `messages` (`message_id`, `title`, `msg_content`, `type`) VALUES
 (2, 'e', 'title', 'auto'),
 (3, 'العنوان ', 'المحتوى ', 'welcome'),
@@ -114,44 +122,48 @@ INSERT INTO `messages` (`message_id`, `title`, `msg_content`, `type`) VALUES
 (9, 'العنوان 10  ', 'المحتوى 10', 'welcome'),
 (10, 'العنوان 10  ', 'المحتوى 10', 'auto');
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `online`
---
+-- 
+-- SQLINES DEMO *** or table `online`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `online` (
   `user_id` int(11) NOT NULL,
   `number` int(11) DEFAULT NULL
 ) 
---
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `online` (`user_id`, `number`) VALUES
 (1, 0);
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `onlinetable`
---
+-- 
+-- SQLINES DEMO *** or table `onlinetable`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `onlinetable` (
   `user_id` varchar(100) NOT NULL,
-  `divtag` text DEFAULT NULL,
+  `divtag` longtext DEFAULT NULL,
   `name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `person`
---
+-- 
+-- SQLINES DEMO *** or table `person`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `person` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(50) DEFAULT NULL,
-  `user_gmail` text DEFAULT NULL,
-  `user_password` text DEFAULT NULL,
+  `user_gmail` longtext DEFAULT NULL,
+  `user_password` longtext DEFAULT NULL,
   `user_join_date` varchar(20) DEFAULT NULL,
   `ip` varchar(20) DEFAULT NULL,
   `device` varchar(30) DEFAULT NULL,
@@ -167,10 +179,11 @@ CREATE TABLE `person` (
   `classment_day` int(11) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `person`
---
+-- 
+-- SQLINES DEMO *** table `person`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `person` (`user_id`, `user_name`, `user_gmail`, `user_password`, `user_join_date`, `ip`, `device`, `likes`, `lastseen`, `auth`, `imgname`, `img`, `nameColor`, `nameBC`, `fontColor`, `classment`, `classment_day`) VALUES
 (1321, 'efef', 'efef@gmail.com', 'ef', '2022/7/3', '192.168.1.112', 'Android', 0, '13:58:45', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (1322, 'mohammed14', 'mohammed14@gmail.com', '', '2022/7/3', '192.168.1.112', 'Android', 0, '14:5:48', 'عضو جديد', NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -213,12 +226,13 @@ INSERT INTO `person` (`user_id`, `user_name`, `user_gmail`, `user_password`, `us
 (1366, 'افنفو', 'افنفو@gmail.com', 'نفتفة', '2022/7/4', '192.168.1.112', 'Android', 0, '19:20:0', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (1368, 'Mohammedeee', 'Mohammedeee@gmail.com', 'erer', '2022/7/6', '192.168.1.112', 'Android', 0, '21:11:53', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `record`
---
+-- 
+-- SQLINES DEMO *** or table `record`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `record` (
   `user_id` int(11) NOT NULL,
   `stats` varchar(50) DEFAULT NULL,
@@ -232,10 +246,11 @@ CREATE TABLE `record` (
   `time` varchar(20) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `record`
---
+-- 
+-- SQLINES DEMO *** table `record`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `record` (`user_id`, `stats`, `momber`, `style`, `ip`, `national`, `device`, `source`, `invation`, `time`) VALUES
 (9516, 'عضو', 'hello1234', 'hello1234', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '*', '2022-08-16 21:19:46'),
 (9517, 'عضو', 'hello1452', 'hello1452', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '*', '2022-08-16 21:20:13'),
@@ -345,12 +360,13 @@ INSERT INTO `record` (`user_id`, `stats`, `momber`, `style`, `ip`, `national`, `
 (9621, 'عضو', 'Mohammedeee', 'Mohammedeee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-20 21:12:08'),
 (9622, 'عضو', 'Mohammedeee', 'Mohammedeee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-21 00:25:59');
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `room`
---
+-- 
+-- SQLINES DEMO *** or table `room`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `room` (
   `room_id` varchar(50) NOT NULL,
   `room_name` varchar(50) DEFAULT NULL,
@@ -365,24 +381,26 @@ CREATE TABLE `room` (
   `img` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `room`
---
+-- 
+-- SQLINES DEMO *** table `room`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `room` (`room_id`, `room_name`, `room_capacity`, `romm_admin`, `description`, `welcomemsg`, `password`, `resLike`, `voiceLike`, `voice`, `img`) VALUES
 ('a', 'الغرفة العامة رقم 1', 2, 'admin', ',,', '? نـــٰـٰٖـٰۦـٰٖورتــِـٰـٰـٰوآ‘إ يـٰآإ اللـٰٰي دخـٰـلتـٰوإآ', '', 20, 20, '', NULL),
 ('b', 'الغرفة العامة2', 2, 'admin', 'eeee', '', '', 0, 0, '', 'cscscs.jpg'),
-('c', 'الغرفة العامة3\n', 4, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('d', 'الغرفة العامة4\n', 8, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, 'dwd.jpg'),
-('e', 'الغرفة العامة5\n', 3, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-('f', 'الغرفة العامة6\n', 3, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+('c', 'الغرفة العامة3n', 4, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+('d', 'الغرفة العامة4n', 8, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, 'dwd.jpg'),
+('e', 'الغرفة العامة5n', 3, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+('f', 'الغرفة العامة6n', 3, 'admin', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `shorts`
---
+-- 
+-- SQLINES DEMO *** or table `shorts`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `shorts` (
   `short_id` int(11) NOT NULL,
   `short` varchar(50) DEFAULT NULL,
@@ -390,10 +408,11 @@ CREATE TABLE `shorts` (
   `type` varchar(50) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `shorts`
---
+-- 
+-- SQLINES DEMO *** table `shorts`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `shorts` (`short_id`, `short`, `short_content`, `type`) VALUES
 (3, 'س', 'السلام عليكم', NULL),
 (4, 'م', 'مرحبا', NULL),
@@ -402,12 +421,13 @@ INSERT INTO `shorts` (`short_id`, `short`, `short_content`, `type`) VALUES
 (7, 't', 'title', 'welcome'),
 (8, 't', 'title', 'auto');
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `stats`
---
+-- 
+-- SQLINES DEMO *** or table `stats`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `stats` (
   `user_id` int(11) NOT NULL,
   `stats` varchar(50) DEFAULT NULL,
@@ -418,10 +438,11 @@ CREATE TABLE `stats` (
   `time` varchar(50) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `stats`
---
+-- 
+-- SQLINES DEMO *** table `stats`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `stats` (`user_id`, `stats`, `momber`, `secondmomber`, `room`, `ip`, `time`) VALUES
 (1, 'بحث غميق رقم 0', 'achraf', 'الوصف', 'الغرفة', '192.168.1.112', '00-00-00'),
 (2, 'بحث غميق رقم 0', 'achraf', 'الوصف', 'الغرفة', '192.168.1.112', '00-00-00'),
@@ -529,12 +550,13 @@ INSERT INTO `stats` (`user_id`, `stats`, `momber`, `secondmomber`, `room`, `ip`,
 (104, 'حظر', '1.2152', 'الوصف', 'الغرفة', '1.2152', '00-00-00'),
 (105, 'بحث عميق رقم 0', 'false', 'الوصف', 'الغرفة', '192.168.1.112', '00-00-00');
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `website_control`
---
+-- 
+-- SQLINES DEMO *** or table `website_control`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `website_control` (
   `id` int(11) NOT NULL,
   `name` varchar(500) DEFAULT NULL,
@@ -552,19 +574,21 @@ CREATE TABLE `website_control` (
   `change_stats_likes` int(11) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `website_control`
---
+-- 
+-- SQLINES DEMO *** table `website_control`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `website_control` (`id`, `name`, `title`, `description`, `keyword`, `script`, `template_color`, `icons_color`, `auto_msg`, `hanit_likes`, `private_msg_likes`, `notification_likes`, `send_img_video_likes`, `change_stats_likes`) VALUES
 (0, '[value-2]', '[value-3]', '[value-4]', '[value-5]', '[value-6]', '[value-7]', '[value-8]', 0, 0, 0, 0, 0, 0);
 
--- --------------------------------------------------------
+-- SQLINES DEMO *** ---------------------------------------
 
---
--- Table structure for table `world`
---
+-- 
+-- SQLINES DEMO *** or table `world`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE `world` (
   `user_id` int(11) NOT NULL,
   `user_name` varchar(40) DEFAULT NULL,
@@ -573,10 +597,11 @@ CREATE TABLE `world` (
   `word` varchar(50) DEFAULT NULL
 ) 
 
---
--- Dumping data for table `world`
---
+-- 
+-- SQLINES DEMO *** table `world`
+-- 
 
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
 INSERT INTO `world` (`user_id`, `user_name`, `ip`, `type`, `word`) VALUES
 (6, 'user', '192.168.1.112', 'allowed', 'dd'),
 (8, 'user', '192.168.1.112', 'blocked', 'الدهاب اللى الجحيم'),
@@ -587,151 +612,151 @@ INSERT INTO `world` (`user_id`, `user_name`, `ip`, `type`, `word`) VALUES
 (14, 'user', '192.168.1.112', 'allowed', 'المشاهدة'),
 (15, 'user', '192.168.1.112', 'blocked', 'lol');
 
---
--- Indexes for dumped tables
---
+-- 
+-- SQLINES DEMO *** d tables
+-- 
 
---
--- Indexes for table `block`
---
+-- 
+-- SQLINES DEMO ***  `block`
+-- 
 ALTER TABLE `block`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `boot`
---
+-- 
+-- SQLINES DEMO ***  `boot`
+-- 
 ALTER TABLE `boot`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `clasment`
---
+-- 
+-- SQLINES DEMO ***  `clasment`
+-- 
 ALTER TABLE `clasment`
   ADD PRIMARY KEY (`clasment_id`),
   ADD UNIQUE KEY `clasment_name` (`clasment_name`);
 
---
--- Indexes for table `messages`
---
+-- 
+-- SQLINES DEMO ***  `messages`
+-- 
 ALTER TABLE `messages`
   ADD PRIMARY KEY (`message_id`);
 
---
--- Indexes for table `online`
---
+-- 
+-- SQLINES DEMO ***  `online`
+-- 
 ALTER TABLE `online`
   ADD PRIMARY KEY (`user_id`);
 
---
--- Indexes for table `onlinetable`
---
+-- 
+-- SQLINES DEMO ***  `onlinetable`
+-- 
 ALTER TABLE `onlinetable`
   ADD PRIMARY KEY (`user_id`),
   ADD UNIQUE KEY `name` (`name`);
 
---
--- Indexes for table `person`
---
+-- 
+-- SQLINES DEMO ***  `person`
+-- 
 ALTER TABLE `person`
   ADD PRIMARY KEY (`user_id`),
   ADD UNIQUE KEY `user_name` (`user_name`);
 
---
--- Indexes for table `record`
---
+-- 
+-- SQLINES DEMO ***  `record`
+-- 
 ALTER TABLE `record`
   ADD PRIMARY KEY (`user_id`);
 
---
--- Indexes for table `room`
---
+-- 
+-- SQLINES DEMO ***  `room`
+-- 
 ALTER TABLE `room`
   ADD PRIMARY KEY (`room_id`);
 
---
--- Indexes for table `shorts`
---
+-- 
+-- SQLINES DEMO ***  `shorts`
+-- 
 ALTER TABLE `shorts`
   ADD PRIMARY KEY (`short_id`);
 
---
--- Indexes for table `stats`
---
+-- 
+-- SQLINES DEMO ***  `stats`
+-- 
 ALTER TABLE `stats`
   ADD PRIMARY KEY (`user_id`);
 
---
--- Indexes for table `website_control`
---
+-- 
+-- SQLINES DEMO ***  `website_control`
+-- 
 ALTER TABLE `website_control`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `world`
---
+-- 
+-- SQLINES DEMO ***  `world`
+-- 
 ALTER TABLE `world`
   ADD PRIMARY KEY (`user_id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
+-- 
+-- SQLINES DEMO *** r dumped tables
+-- 
 
---
--- AUTO_INCREMENT for table `block`
---
+-- 
+-- SQLINES DEMO *** r table `block`
+-- 
 ALTER TABLE `block`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
---
--- AUTO_INCREMENT for table `boot`
---
+-- 
+-- SQLINES DEMO *** r table `boot`
+-- 
 ALTER TABLE `boot`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
---
--- AUTO_INCREMENT for table `clasment`
---
+-- 
+-- SQLINES DEMO *** r table `clasment`
+-- 
 ALTER TABLE `clasment`
-  MODIFY `clasment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `clasment_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
---
--- AUTO_INCREMENT for table `messages`
---
+-- 
+-- SQLINES DEMO *** r table `messages`
+-- 
 ALTER TABLE `messages`
-  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `message_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
---
--- AUTO_INCREMENT for table `online`
---
+-- 
+-- SQLINES DEMO *** r table `online`
+-- 
 ALTER TABLE `online`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `user_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
---
--- AUTO_INCREMENT for table `person`
---
+-- 
+-- SQLINES DEMO *** r table `person`
+-- 
 ALTER TABLE `person`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1369;
+  MODIFY `user_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1369;
 
---
--- AUTO_INCREMENT for table `record`
---
+-- 
+-- SQLINES DEMO *** r table `record`
+-- 
 ALTER TABLE `record`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9623;
+  MODIFY `user_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9623;
 
---
--- AUTO_INCREMENT for table `shorts`
---
+-- 
+-- SQLINES DEMO *** r table `shorts`
+-- 
 ALTER TABLE `shorts`
-  MODIFY `short_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `short_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
---
--- AUTO_INCREMENT for table `stats`
---
+-- 
+-- SQLINES DEMO *** r table `stats`
+-- 
 ALTER TABLE `stats`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `user_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
---
--- AUTO_INCREMENT for table `world`
---
+-- 
+-- SQLINES DEMO *** r table `world`
+-- 
 ALTER TABLE `world`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `user_id` cast(11 as int) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
