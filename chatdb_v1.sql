@@ -1,8 +1,19 @@
 
+-- Table structure for table block
+--
 
+CREATE TABLE block (
+  id int(11) NOT NULL,
+  blocklist varchar(40) DEFAULT NULL
+) ;
+
+--
+-- Dumping data for table block
+--
 
 INSERT INTO block (id, blocklist) VALUES
 (1, '12.215.21'),
+(2, 'undefined'),
 (3, '192.168.1.112'),
 (4, '192.168.1.112'),
 (5, 'ge'),
@@ -25,7 +36,8 @@ CREATE TABLE boot (
   likes int(11) DEFAULT NULL,
   pin_room varchar(50) DEFAULT NULL,
   photo varchar(50) DEFAULT NULL
-) 
+) ;
+
 --
 -- Dumping data for table boot
 --
@@ -69,7 +81,8 @@ CREATE TABLE clasment (
   left_mic varchar(50) DEFAULT NULL,
   active_mic varchar(50) DEFAULT NULL,
   control_website varchar(50) DEFAULT NULL
-) 
+) ;
+
 --
 -- Dumping data for table clasment
 --
@@ -90,7 +103,7 @@ CREATE TABLE messages (
   title varchar(50) DEFAULT NULL,
   msg_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) 
+) ;
 
 --
 -- Dumping data for table messages
@@ -116,7 +129,10 @@ INSERT INTO messages (message_id, title, msg_content, type) VALUES
 CREATE TABLE online (
   user_id int(11) NOT NULL,
   number int(11) DEFAULT NULL
-) 
+) ;
+
+--
+-- Dumping data for table online
 --
 
 INSERT INTO online (user_id, number) VALUES
@@ -132,7 +148,7 @@ CREATE TABLE onlinetable (
   user_id varchar(100) NOT NULL,
   divtag text DEFAULT NULL,
   name varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ;
 
 -- --------------------------------------------------------
 
@@ -158,7 +174,7 @@ CREATE TABLE person (
   fontColor varchar(50) DEFAULT NULL,
   classment varchar(50) DEFAULT NULL,
   classment_day int(11) DEFAULT NULL
-) 
+) ;
 
 --
 -- Dumping data for table person
@@ -223,7 +239,7 @@ CREATE TABLE record (
   source varchar(50) DEFAULT NULL,
   invation varchar(20) DEFAULT NULL,
   time varchar(20) DEFAULT NULL
-) 
+) ;
 
 --
 -- Dumping data for table record
@@ -356,7 +372,7 @@ CREATE TABLE room (
   voiceLike int(11) DEFAULT NULL,
   voice varchar(20) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ;
 
 --
 -- Dumping data for table room
@@ -381,7 +397,7 @@ CREATE TABLE shorts (
   short varchar(50) DEFAULT NULL,
   short_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) 
+) ;
 
 --
 -- Dumping data for table shorts
@@ -409,7 +425,7 @@ CREATE TABLE stats (
   room varchar(50) DEFAULT NULL,
   ip varchar(20) DEFAULT NULL,
   time varchar(50) DEFAULT NULL
-) 
+) ;
 
 --
 -- Dumping data for table stats
@@ -543,7 +559,7 @@ CREATE TABLE website_control (
   notification_likes int(11) DEFAULT NULL,
   send_img_video_likes int(11) DEFAULT NULL,
   change_stats_likes int(11) DEFAULT NULL
-) 
+) ;
 
 --
 -- Dumping data for table website_control
@@ -564,7 +580,7 @@ CREATE TABLE world (
   ip varchar(30) DEFAULT NULL,
   type varchar(50) DEFAULT NULL,
   word varchar(50) DEFAULT NULL
-) 
+) ;
 
 --
 -- Dumping data for table world
@@ -728,3 +744,5 @@ ALTER TABLE stats
 --
 ALTER TABLE world
   MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+COMMIT;
+
