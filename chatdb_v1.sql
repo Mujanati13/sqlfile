@@ -1,11 +1,13 @@
 
--- Table structure for table block
+
+--
+-- Database: chatdb_v1
 --
 
 CREATE TABLE block (
   id int(11) NOT NULL,
   blocklist varchar(40) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table block
@@ -19,7 +21,9 @@ INSERT INTO block (id, blocklist) VALUES
 (5, 'ge'),
 (8, 'w'),
 (10, '192.168.1.112'),
-(12, '1.2152');
+(12, '1.2152'),
+(13, '192.168.1.112'),
+(14, '192.168.1.112');
 
 -- --------------------------------------------------------
 
@@ -36,7 +40,7 @@ CREATE TABLE boot (
   likes int(11) DEFAULT NULL,
   pin_room varchar(50) DEFAULT NULL,
   photo varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table boot
@@ -44,6 +48,31 @@ CREATE TABLE boot (
 
 INSERT INTO boot (id, stats, country, style, descri, likes, pin_room, photo) VALUES
 (1, 'متصل', 'MR', '', '5000        ', 0, NULL, 'محمد');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table chat
+--
+
+CREATE TABLE chat (
+  id int(11) NOT NULL,
+  user1 varchar(100) DEFAULT NULL,
+  user2 varchar(100) DEFAULT NULL,
+  source varchar(100) DEFAULT NULL,
+  dis varchar(100) DEFAULT NULL,
+  msg varchar(500) DEFAULT NULL
+);
+
+--
+-- Dumping data for table chat
+--
+
+INSERT INTO chat (id, user1, user2, source, dis, msg) VALUES
+(21, 'e', 'e 1', 'xUZBaAvPKisi8KGPAAAH', '62PNkX7uulD90Gg-AAAJ', 'eri'),
+(22, 'qwa', 'qw', 'QtF3xQ5jBubeC4t_AAAH', 'JtOmQqyV-bSyjtsDAAAF', 'i hope'),
+(23, 'qw', 'qwa', 'JtOmQqyV-bSyjtsDAAAF', 'QtF3xQ5jBubeC4t_AAAH', 'back'),
+(24, 'qwa', 'qw', 'QtF3xQ5jBubeC4t_AAAH', 'JtOmQqyV-bSyjtsDAAAF', 'e');
 
 -- --------------------------------------------------------
 
@@ -81,7 +110,7 @@ CREATE TABLE clasment (
   left_mic varchar(50) DEFAULT NULL,
   active_mic varchar(50) DEFAULT NULL,
   control_website varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table clasment
@@ -103,7 +132,7 @@ CREATE TABLE messages (
   title varchar(50) DEFAULT NULL,
   msg_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table messages
@@ -148,7 +177,7 @@ CREATE TABLE onlinetable (
   user_id varchar(100) NOT NULL,
   divtag text DEFAULT NULL,
   name varchar(50) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -174,53 +203,27 @@ CREATE TABLE person (
   fontColor varchar(50) DEFAULT NULL,
   classment varchar(50) DEFAULT NULL,
   classment_day int(11) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table person
 --
 
 INSERT INTO person (user_id, user_name, user_gmail, user_password, user_join_date, ip, device, likes, lastseen, auth, imgname, img, nameColor, nameBC, fontColor, classment, classment_day) VALUES
-(1321, 'efef', 'efef@gmail.com', 'ef', '2022/7/3', '192.168.1.112', 'Android', 0, '13:58:45', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1322, 'mohammed14', 'mohammed14@gmail.com', '', '2022/7/3', '192.168.1.112', 'Android', 0, '14:5:48', 'عضو جديد', NULL, '', NULL, NULL, NULL, NULL, NULL),
-(1324, 'mohammed14d', 'mohammed14d@gmail.com', 'hello', '2022/7/3', '192.168.1.112', 'Android', 100000, '14:8:45', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, 'undefined', 0),
-(1325, 'mohammed jana', 'mohammed jana@gmail.com', '', '2022/7/3', '192.168.1.112', 'Android', 0, '14:18:4', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1326, 'eee', 'eee@gmail.com', 'ee', '2022/7/3', '192.168.1.112', 'Android', 0, '14:19:20', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1327, 'eeefe', 'eeefe@gmail.com', 'ee', '2022/7/3', '192.168.1.112', 'Android', 0, '14:20:16', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1328, 'wewew', 'wewe@gmail.com', '', '2022/7/3', '192.168.1.112', 'Android', 0, '14:20:48', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1329, 'wdwd', 'wdwd@gmail.com', 'wdwd', '2022/7/3', '192.168.1.112', 'Android', 0, '14:20:48', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1330, 'efefef', 'efefef@gmail.com', 'efef', '2022/7/3', '192.168.1.112', 'Android', 0, '14:22:4', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1331, 'Mohammed50', 'Mohammed50@gmail.com', 'eded', '2022/7/3', '192.168.1.112', 'Android', 0, '15:47:20', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1332, 'Mohammed50d', 'Mohammed50d@gmail.com', 'eded', '2022/7/3', '192.168.1.112', 'Android', 0, '15:48:51', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1333, 'dfdfd', 'dfdfd@gmail.com', 'dfdf', '2022/7/3', '192.168.1.112', 'Android', 0, '15:54:21', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1334, 'ererer', 'ererer@gmail.com', 'erer', '2022/7/3', '192.168.1.112', 'Android', 0, '16:3:3', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1335, 'erererdd', 'erererdd@gmail.com', 'erer', '2022/7/3', '192.168.1.112', 'Android', 0, '16:6:27', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1336, 'helloMothe', 'helloMothe@gmail.com', 'erer', '2022/7/3', '192.168.1.112', 'Android', 0, '16:13:33', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1339, 'efefefef', 'efefefef@gmail.com', 'efef', '2022/7/3', '192.168.1.112', 'Android', 0, '16:15:1', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1340, 'helloMathfuck', 'helloMathfuck@gmail.com', 'ererer', '2022/7/3', '192.168.1.112', 'Android', 0, '16:16:27', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1341, 'weewewe', 'weewewe@gmail.com', 'wewee', '2022/7/3', '192.168.1.112', 'Android', 0, '16:34:16', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1345, 'efefefefqq', 'efefefefqq@gmail.com', 'efefef', '2022/7/3', '192.168.1.112', 'Android', 0, '16:37:8', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1346, 'sdsds', 'sdsds@gmail.com', 'sdsd', '2022/7/3', '192.168.1.112', 'Android', 0, '16:38:30', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1347, 'wdwdrr', 'wdwdrr@gmail.com', 'rrrr', '2022/7/3', '192.168.1.112', 'Android', 0, '16:38:30', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1348, 'wdwdrrww', 'wdwdrrww@gmail.com', 'rrrr', '2022/7/3', '192.168.1.112', 'Android', 0, '16:44:26', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, 'مشرف', 0),
-(1349, 'Mohammed', 'Mohammed@gmail.com', 'edede', '2022/7/3', '192.168.1.112', 'Android', 0, '16:44:26', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1350, 'hellokkk', 'hello@gmail.com', 'hvkhv', '2022/7/3', '192.168.1.112', 'Android', 0, '16:44:26', 'عضو جديد', NULL, '', NULL, NULL, NULL, 'admin1', NULL),
-(1351, 'mohammeee', 'mohammeee@gmail.com', '', '2022/7/3', '192.168.1.112', 'Android', 55, '22:32:42', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1352, 'deeee', 'deeee@gmail.com', 'dede', '2022/7/3', '192.168.1.112', 'Android', 0, '22:37:35', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1353, 'deeeeerere', 'deeeeerere@gmail.com', 'dede', '2022/7/3', '192.168.1.112', 'Android', 0, '22:58:40', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1354, 'deeeseerere', 'deeeseerere@gmail.com', 'dede', '2022/7/3', '192.168.1.112', 'Android', 0, '23:0:15', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1355, 'deeeseererer', 'deeeseererer@gmail.com', 'dede', '2022/7/3', '192.168.1.112', 'Android', 0, '23:14:6', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1356, 'deeeseerererg', 'deeeseerererg@gmail.com', 'dede', '2022/7/3', '192.168.1.112', 'Android', 0, '23:15:50', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1357, 'helloworld', 'helloworld@gmail.com', 'wdwd', '2022/7/4', '192.168.1.112', 'Android', 0, '17:0:43', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1358, 'etertert', 'etertert@gmail.com', 'ertertert', '2022/7/4', '192.168.1.112', 'Android', 0, '17:8:16', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1359, 'effefeef', 'effefeef@gmail.com', 'fefefe', '2022/7/4', '192.168.1.112', 'Android', 0, '17:12:28', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1361, 'helloworldww', 'helloworldww@gmail.com', 'wdwd', '2022/7/4', '192.168.1.112', 'Android', 0, '19:3:7', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1362, 'helloweeorldww', 'helloweeorldww@gmail.com', 'wdwd', '2022/7/4', '192.168.1.112', 'Android', 0, '19:13:33', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1363, 'Janati13', 'Janati13@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '19:15:41', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1364, 'محمد الجان ', 'محمد الجان @gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '19:15:41', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1365, 'محمد الجنوتا ', 'محمد الجنوتا @gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '19:15:41', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1366, 'افنفو', 'افنفو@gmail.com', 'نفتفة', '2022/7/4', '192.168.1.112', 'Android', 0, '19:20:0', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(1368, 'Mohammedeee', 'Mohammedeee@gmail.com', 'erer', '2022/7/6', '192.168.1.112', 'Android', 0, '21:11:53', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(1499, 'mohammed', 'mohammed@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:40:21', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1500, 'mohammed 1', 'mohammed 1@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:40:21', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1501, 'ddd', 'ddd@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:42:44', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1502, 'cc', 'cc@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:42:44', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1503, 'ww', 'ww@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:44:16', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1504, 'ww 1', 'ww 1@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:44:16', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1505, 'ddw', 'ddw@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:45:36', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1506, 'dd 1', 'dd 1@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:45:36', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1507, 'ee', 'ee@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:48:55', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1508, 'ee 1', 'ee 1@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:48:55', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1509, 'e', 'e@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:48:55', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1510, 'e 1', 'e 1@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '18:48:55', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1511, 'qw', 'qw@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '19:4:42', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(1512, 'qwa', 'qwa@gmail.com', '', '2022/7/4', '192.168.1.112', 'Android', 0, '19:4:42', 'عضو جديد', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -239,120 +242,7 @@ CREATE TABLE record (
   source varchar(50) DEFAULT NULL,
   invation varchar(20) DEFAULT NULL,
   time varchar(20) DEFAULT NULL
-) ;
-
---
--- Dumping data for table record
---
-
-INSERT INTO record (user_id, stats, momber, style, ip, national, device, source, invation, time) VALUES
-(9516, 'عضو', 'hello1234', 'hello1234', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '*', '2022-08-16 21:19:46'),
-(9517, 'عضو', 'hello1452', 'hello1452', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '*', '2022-08-16 21:20:13'),
-(9518, 'عضو', 'ejs', 'ejs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:24:54'),
-(9519, 'عضو', 'ejs', 'ejs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:25:08'),
-(9520, 'عضو', 'ejs', 'ejs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:25:42'),
-(9521, 'عضو', 'ejs', 'ejs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:26:05'),
-(9522, 'عضو', 'Mohammed join 2', 'Mohammed join 2', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:28:25'),
-(9523, 'عضو', 'les gus', 'les gus', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:28:44'),
-(9524, 'عضو', 'Mohammed join 2', 'Mohammed join 2', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:31:44'),
-(9525, 'عضو', 'les gus', 'les gus', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:31:45'),
-(9526, 'عضو', 'mujanati14', 'mujanati14', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:33:02'),
-(9527, 'عضو', 'mujanati14', 'mujanati14', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:33:07'),
-(9528, 'عضو', '', '', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:33:23'),
-(9529, 'عضو', '', '', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:34:22'),
-(9530, 'عضو', 'ee', 'ee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:35:08'),
-(9531, 'عضو', 'ee', 'ee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:35:34'),
-(9532, 'عضو', 'joins sina', 'joins sina', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:36:17'),
-(9533, 'عضو', 'joins sina', 'joins sina', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:37:21'),
-(9534, 'عضو', 'hello world', 'hello world', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:37:31'),
-(9535, 'عضو', 'hello worlde', 'hello worlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:39:03'),
-(9536, 'عضو', 'hello worlde', 'hello worlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:39:26'),
-(9537, 'عضو', 'hello worldeer', 'hello worldeer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:39:30'),
-(9538, 'عضو', 'hello worldeere', 'hello worldeere', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:42:26'),
-(9539, 'عضو', 'helloworld12', 'helloworld12', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:45:09'),
-(9540, 'عضو', 'hellor', 'hellor', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:46:31'),
-(9541, 'عضو', 'ereee', 'ereee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:48:18'),
-(9542, 'عضو', 'hellogift', 'hellogift', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:55:13'),
-(9543, 'عضو', 'helloergift', 'helloergift', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:56:38'),
-(9544, 'عضو', 'helloergift', 'helloergift', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 21:57:35'),
-(9545, 'عضو', 'llocalgift', 'llocalgift', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:57:47'),
-(9546, 'عضو', 'looo', 'looo', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 21:59:11'),
-(9547, 'عضو', 'looo', 'looo', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 22:01:21'),
-(9548, 'عضو', 'efefef', 'efefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 22:02:15'),
-(9549, 'عضو', 'efefef', 'efefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 22:03:32'),
-(9550, 'عضو', 'ededdee', 'ededdee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 22:03:43'),
-(9551, 'عضو', 'ededdee', 'ededdee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-16 22:12:28'),
-(9552, 'عضو', 'mohammedpf', 'mohammedpf', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:20:48'),
-(9553, 'عضو', 'classment', 'classment', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:31:35'),
-(9554, 'عضو', 'classmentd', 'classmentd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:33:17'),
-(9555, 'عضو', 'classmentdd', 'classmentdd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:34:52'),
-(9556, 'عضو', 'classmentdde', 'classmentdde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:46:25'),
-(9557, 'عضو', 'oneee', 'oneee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:57:55'),
-(9558, 'عضو', 'twoooo', 'twoooo', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:58:10'),
-(9559, 'عضو', '3', '3', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:58:57'),
-(9560, 'عضو', '4', '4', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-16 23:59:03'),
-(9561, 'عضو', '5', '5', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 00:00:17'),
-(9562, 'عضو', '6', '6', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 00:00:22'),
-(9563, 'عضو', 'eee', 'eee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 00:01:28'),
-(9564, 'عضو', 'erer', 'erer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 00:01:31'),
-(9565, 'عضو', 'eee', 'eee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 00:01:32'),
-(9566, 'عضو', 'erer', 'erer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 00:01:33'),
-(9567, 'عضو', '9', '9', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 00:01:44'),
-(9568, 'عضو', '10', '10', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 00:01:45'),
-(9569, 'عضو', 'erererere', 'erererere', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 00:02:22'),
-(9570, 'عضو', '9', '9', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 00:05:53'),
-(9571, 'عضو', '10', '10', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 00:05:54'),
-(9572, 'عضو', 'erererere', 'erererere', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 00:05:54'),
-(9573, 'عضو', 'hellow e', 'hellow e', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 13:56:31'),
-(9574, 'عضو', 'efef', 'efef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 13:58:54'),
-(9575, 'عضو', 'mohammed14', 'mohammed14', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:06:10'),
-(9576, 'عضو', 'mohammed14d', 'mohammed14d', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:09:01'),
-(9577, 'عضو', 'mohammed jana', 'mohammed jana', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:18:30'),
-(9578, 'عضو', 'eee', 'eee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:19:29'),
-(9579, 'عضو', 'eeefe', 'eeefe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:20:19'),
-(9580, 'عضو', 'wewe', 'wewe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:20:51'),
-(9581, 'عضو', 'wewe', 'wewe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 14:21:20'),
-(9582, 'عضو', 'wdwd', 'wdwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:21:23'),
-(9583, 'عضو', 'efefef', 'efefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 14:22:18'),
-(9584, 'عضو', 'efefef', 'efefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 15:37:57'),
-(9585, 'عضو', 'Mohammed50', 'Mohammed50', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 15:47:37'),
-(9586, 'عضو', 'Mohammed50d', 'Mohammed50d', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 15:48:54'),
-(9587, 'عضو', 'dfdfd', 'dfdfd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 15:54:46'),
-(9588, 'عضو', 'ererer', 'ererer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:03:13'),
-(9589, 'عضو', 'erererdd', 'erererdd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:06:31'),
-(9590, 'عضو', 'helloMothe', 'helloMothe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:13:56'),
-(9591, 'عضو', 'efefefef', 'efefefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:15:10'),
-(9592, 'عضو', 'helloMathfuck', 'helloMathfuck', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:16:37'),
-(9593, 'عضو', 'weewewe', 'weewewe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:34:42'),
-(9594, 'عضو', 'efefefefqq', 'efefefefqq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:37:22'),
-(9595, 'عضو', 'sdsds', 'sdsds', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:38:38'),
-(9596, 'عضو', 'sdsds', 'sdsds', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 16:42:01'),
-(9597, 'عضو', 'wdwdrr', 'wdwdrr', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:42:08'),
-(9598, 'عضو', 'wdwdrrww', 'wdwdrrww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 16:44:29'),
-(9599, 'عضو', 'wdwdrrww', 'wdwdrrww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 18:41:50'),
-(9600, 'عضو', 'Mohammed', 'Mohammed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 19:08:37'),
-(9601, 'عضو', 'Mohammed', 'Mohammed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-17 19:08:49'),
-(9602, 'عضو', 'hello', 'hello', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 19:13:11'),
-(9603, 'عضو', 'mohammeee', 'mohammeee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 22:33:35'),
-(9604, 'عضو', 'deeee', 'deeee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 22:37:47'),
-(9605, 'عضو', 'deeeeerere', 'deeeeerere', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 22:58:45'),
-(9606, 'عضو', 'deeeseerere', 'deeeseerere', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 23:00:21'),
-(9607, 'عضو', 'deeeseererer', 'deeeseererer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 23:14:29'),
-(9608, 'عضو', 'deeeseerererg', 'deeeseerererg', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-17 23:15:56'),
-(9609, 'عضو', 'helloworld', 'helloworld', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 17:00:54'),
-(9610, 'عضو', 'etertert', 'etertert', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 17:08:23'),
-(9611, 'عضو', 'effefeef', 'effefeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 17:12:52'),
-(9612, 'عضو', 'effefeef', 'effefeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-18 17:25:26'),
-(9613, 'عضو', 'helloworldww', 'helloworldww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 19:03:31'),
-(9614, 'عضو', 'helloweeorldww', 'helloweeorldww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 19:13:36'),
-(9615, 'عضو', 'Janati13', 'Janati13', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 19:16:46'),
-(9616, 'عضو', 'محمد الجان ', 'محمد الجان ', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 19:17:37'),
-(9617, 'عضو', 'محمد الجان ', 'محمد الجان ', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-18 19:18:33'),
-(9618, 'عضو', 'محمد الجنوتا ', 'محمد الجنوتا ', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 19:18:44'),
-(9619, 'عضو', 'افنفو', 'افنفو', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-18 19:20:24'),
-(9620, 'عضو', 'افنفو', 'افنفو', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-18 19:20:40'),
-(9621, 'عضو', 'Mohammedeee', 'Mohammedeee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الدخول', '2022-08-20 21:12:08'),
-(9622, 'عضو', 'Mohammedeee', 'Mohammedeee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', 'تسجيل الخروج', '2022-08-21 00:25:59');
+);
 
 -- --------------------------------------------------------
 
@@ -372,7 +262,7 @@ CREATE TABLE room (
   voiceLike int(11) DEFAULT NULL,
   voice varchar(20) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table room
@@ -397,7 +287,7 @@ CREATE TABLE shorts (
   short varchar(50) DEFAULT NULL,
   short_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table shorts
@@ -425,7 +315,7 @@ CREATE TABLE stats (
   room varchar(50) DEFAULT NULL,
   ip varchar(20) DEFAULT NULL,
   time varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table stats
@@ -559,7 +449,7 @@ CREATE TABLE website_control (
   notification_likes int(11) DEFAULT NULL,
   send_img_video_likes int(11) DEFAULT NULL,
   change_stats_likes int(11) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table website_control
@@ -580,7 +470,7 @@ CREATE TABLE world (
   ip varchar(30) DEFAULT NULL,
   type varchar(50) DEFAULT NULL,
   word varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table world
@@ -610,6 +500,12 @@ ALTER TABLE block
 -- Indexes for table boot
 --
 ALTER TABLE boot
+  ADD PRIMARY KEY (id);
+
+--
+-- Indexes for table chat
+--
+ALTER TABLE chat
   ADD PRIMARY KEY (id);
 
 --
@@ -689,13 +585,19 @@ ALTER TABLE world
 -- AUTO_INCREMENT for table block
 --
 ALTER TABLE block
-  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table boot
 --
 ALTER TABLE boot
   MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table chat
+--
+ALTER TABLE chat
+  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table clasment
@@ -713,19 +615,19 @@ ALTER TABLE messages
 -- AUTO_INCREMENT for table online
 --
 ALTER TABLE online
-  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table person
 --
 ALTER TABLE person
-  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1369;
+  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1513;
 
 --
 -- AUTO_INCREMENT for table record
 --
 ALTER TABLE record
-  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9623;
+  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9809;
 
 --
 -- AUTO_INCREMENT for table shorts
@@ -746,3 +648,6 @@ ALTER TABLE world
   MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
