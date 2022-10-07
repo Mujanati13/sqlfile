@@ -207,7 +207,6 @@ INSERT INTO mag_hanit_feedback (feed_back_id, msg_id, comment, likes, name) VALU
 (37, 307206, 'e,e,e', 0, 'wda'),
 (38, 307206, 'av', 0, 'wdaw'),
 (39, 307206, 'sd', 0, 'wdaw'),
-(4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVl68fiu8x_1004.gif\">', 0, 'wdaw'),
 (41, 208525, 'ff', 0, 'wdawefe'),
 (42, 208525, 'ef', 0, 'wdawefe'),
 (43, 208525, 'ef', 0, 'wdawefe'),
