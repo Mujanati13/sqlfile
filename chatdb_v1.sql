@@ -1,22 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Oct 11, 2022 at 06:20 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
 
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: chatdb_v1
---
 
 -- --------------------------------------------------------
 
@@ -27,7 +9,7 @@
 CREATE TABLE block (
   id int(11) NOT NULL,
   blocklist varchar(40) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table block
@@ -60,7 +42,7 @@ CREATE TABLE boot (
   likes int(11) DEFAULT NULL,
   pin_room varchar(50) DEFAULT NULL,
   photo varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table boot
@@ -84,7 +66,7 @@ CREATE TABLE chat (
   msg varchar(1000) DEFAULT NULL,
   timen int(11) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -122,7 +104,7 @@ CREATE TABLE clasment (
   left_mic varchar(50) DEFAULT NULL,
   active_mic varchar(50) DEFAULT NULL,
   control_website varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table clasment
@@ -147,7 +129,7 @@ CREATE TABLE exitero (
   namecolor varchar(50) DEFAULT NULL,
   nameg varchar(50) DEFAULT NULL,
   img varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table exitero
@@ -171,7 +153,7 @@ CREATE TABLE hanitmsg (
   likes int(11) DEFAULT NULL,
   time int(11) DEFAULT NULL,
   img varchar(150) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table hanitmsg
@@ -306,7 +288,7 @@ CREATE TABLE join (
   classment_day int(11) DEFAULT NULL,
   nikname varchar(100) DEFAULT NULL,
   country varchar(50) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -321,7 +303,7 @@ CREATE TABLE mag_hanit_feedback (
   likes int(11) DEFAULT NULL,
   name varchar(100) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table mag_hanit_feedback
@@ -343,7 +325,7 @@ CREATE TABLE messages (
   title varchar(50) DEFAULT NULL,
   msg_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table messages
@@ -390,7 +372,7 @@ CREATE TABLE onlinetable (
   namecolor varchar(50) DEFAULT NULL,
   namebg varchar(50) DEFAULT NULL,
   room_name varchar(100) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -420,7 +402,7 @@ CREATE TABLE person (
   country varchar(50) DEFAULT NULL,
   statscolor varchar(50) DEFAULT NULL,
   counryNN varchar(100) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table person
@@ -571,7 +553,7 @@ CREATE TABLE record (
   source varchar(50) DEFAULT NULL,
   invation varchar(20) DEFAULT NULL,
   time varchar(20) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table record
@@ -2007,7 +1989,7 @@ CREATE TABLE room (
   voice varchar(20) DEFAULT NULL,
   img varchar(100) DEFAULT NULL,
   length int(11) DEFAULT NULL CHECK (length >= 0)
-) ;
+);
 
 --
 -- Dumping data for table room
@@ -2037,7 +2019,7 @@ CREATE TABLE shorts (
   short varchar(50) DEFAULT NULL,
   short_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table shorts
@@ -2065,7 +2047,7 @@ CREATE TABLE stats (
   room varchar(50) DEFAULT NULL,
   ip varchar(20) DEFAULT NULL,
   time varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table stats
@@ -2119,7 +2101,7 @@ CREATE TABLE website_control (
   notification_likes int(11) DEFAULT NULL,
   send_img_video_likes int(11) DEFAULT NULL,
   change_stats_likes int(11) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table website_control
@@ -2140,7 +2122,7 @@ CREATE TABLE world (
   ip varchar(30) DEFAULT NULL,
   type varchar(50) DEFAULT NULL,
   word varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table world
