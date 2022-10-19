@@ -1,15 +1,9 @@
 
 
--- --------------------------------------------------------
-
---
--- Table structure for table block
---
-
 CREATE TABLE block (
   id int(11) NOT NULL,
   blocklist varchar(40) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table block
@@ -42,7 +36,7 @@ CREATE TABLE boot (
   likes int(11) DEFAULT NULL,
   pin_room varchar(50) DEFAULT NULL,
   photo varchar(50) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table boot
@@ -66,7 +60,7 @@ CREATE TABLE chat (
   msg varchar(1000) DEFAULT NULL,
   timen int(11) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-);
+) ;
 
 -- --------------------------------------------------------
 
@@ -104,7 +98,7 @@ CREATE TABLE clasment (
   left_mic varchar(50) DEFAULT NULL,
   active_mic varchar(50) DEFAULT NULL,
   control_website varchar(50) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table clasment
@@ -128,17 +122,10 @@ CREATE TABLE exitero (
   country varchar(50) DEFAULT NULL,
   namecolor varchar(50) DEFAULT NULL,
   nameg varchar(50) DEFAULT NULL,
-  img varchar(50) DEFAULT NULL
-);
-
---
--- Dumping data for table exitero
---
-
-INSERT INTO exitero (user_name, room_name, user_id, country, namecolor, nameg, img) VALUES
-('false', '?????? ?????? ??? 1', '7bkI6nwkEdA6uw8GAAAF', 'ma.png', '#000000 ', '#ffffff ', 'favicon.ico'),
-('Mohammed hs', '?????? ?????? ??? 1', 'oQaERg8UIXhqeZaSAAAF', 'ma.png', '#000000 ', '#ffffff ', 'favicon.ico'),
-('Mohammed hsr', '?????? ?????? ??? 1', 'Sx_D84MrmBHXwu-1AAAD', 'ma.png', '#000000 ', '#ffffff ', 'favicon.ico');
+  img varchar(50) DEFAULT NULL,
+  stats varchar(200) DEFAULT NULL,
+  nikename varchar(100) DEFAULT NULL
+) ;
 
 -- --------------------------------------------------------
 
@@ -152,115 +139,127 @@ CREATE TABLE hanitmsg (
   mag_creator varchar(500) DEFAULT NULL,
   likes int(11) DEFAULT NULL,
   time int(11) DEFAULT NULL,
-  img varchar(150) DEFAULT NULL
-);
+  img varchar(150) DEFAULT NULL,
+  comments int(11) DEFAULT NULL
+) ;
 
 --
 -- Dumping data for table hanitmsg
 --
 
-INSERT INTO hanitmsg (msg_id, mag_content, mag_creator, likes, time, img) VALUES
-(30345, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 2, 54603, 'favicon.ico'),
-(33489, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/dwd.jpg\"></div>', 'bebe', 0, 0, 'favicon.ico'),
-(34524, 'he', 'hello worlds', 0, 0, 'favicon.ico'),
-(46351, 'as', 'Mohammedd cdawax', 1, 49603, 'favicon.ico'),
-(50103, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/se.jpg\"></div>', 'bebe', 0, 0, 'favicon.ico'),
-(53954, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 0, 0, 'favicon.ico'),
-(55575, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'vavavs', 0, 0, 'favicon.ico'),
-(58861, 'sq', 'hello world123', 0, 0, 'favicon.ico'),
-(67456, '', 'hr', 0, 0, 'favicon.ico'),
-(69384, '?? ?????', '???????', 0, 0, 'favicon.ico'),
-(71154, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/sdsdsdsd.png\"></div>', 'bebe', 0, 0, 'favicon.ico'),
-(72760, 'h', 'hello world12', 0, 0, 'favicon.ico'),
-(85040, 'wr', 'wdawefe', 0, 68285, 'favicon.ico'),
-(88918, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'Mohammed Janatia', 0, 0, 'favicon.ico'),
-(89300, 'he', 'hello worlds', 0, 0, 'favicon.ico'),
-(90314, '<img style=\"max-height: 20px;max-width: 21px;\" style=\"width=20px;\" src=\"/emojey/l68fiu8x_1007.gif\">', 'wda', 10, 58603, 'favicon.ico'),
-(91706, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'bebe', 3, 0, 'favicon.ico'),
-(98776, 'jamais', 'hello world1', 0, 0, 'favicon.ico'),
-(114245, '???', '???????', 0, 0, 'favicon.ico'),
-(116715, '??', '???????', 0, 0, 'favicon.ico'),
-(117985, 's', 'Mohammed bad', 0, 45249, 'favicon.ico'),
-(121005, 'hi', 'hello world123', 0, 0, 'favicon.ico'),
-(130571, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 0, 58603, 'favicon.ico'),
-(131704, 'kk', 'hello world123', 0, 0, 'favicon.ico'),
-(159239, '<iframe width=\"215\" src=\"//www.youtube.com/embed/Bzzp5Cay7DI\" frameborder=\"0\" allowfullscreen></iframe>', 'Mohammed Janatia', 0, 0, 'favicon.ico'),
-(160069, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'Mohammed Janatia', 1, 0, 'favicon.ico'),
-(160834, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 2, 0, 'favicon.ico'),
-(166752, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'ed', 1, 0, 'favicon.ico'),
-(168232, '<iframe width=\"215\" src=\"//www.youtube.com/embed/GeE6a8t7hXc\" frameborder=\"0\" allowfullscreen></iframe>', '', 0, 0, 'favicon.ico'),
-(170659, 'jamais', 'hello world1', 0, 0, 'favicon.ico'),
-(177371, 'eds', 'Mohammed ba', 0, 45851, 'favicon.ico'),
-(180026, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'heell', 0, 46119, 'favicon.ico'),
-(183197, 'hi', 'hello worlds', 0, 0, 'favicon.ico'),
-(184882, 'ge', 'hello worlds', 0, 0, 'favicon.ico'),
-(194930, '?? ?????', '???????', 0, 0, 'favicon.ico'),
-(198701, '<div><img style=\"width: 150px;\" src=\"/upload/sdsdsdsd.png\"></div>', 'bebe', 4, 0, 'favicon.ico'),
-(205069, 'as', 'mohammed v5', 0, 46850, 'favicon.ico'),
-(205942, 'ji', 'hello world12', 0, 0, 'favicon.ico'),
-(208008, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed Janatia', 0, 0, 'favicon.ico'),
-(208525, 'aaa', 'wdawefe', 0, 68819, 'favicon.ico'),
-(212537, 'ji', 'hello world12', 0, 0, 'favicon.ico'),
-(214746, 'fd', 'hello worlds', 0, 0, 'favicon.ico'),
-(216401, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 0, 0, 'favicon.ico'),
-(223228, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed Janat', 0, 0, 'favicon.ico'),
-(223721, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'vavavs', 0, 0, 'favicon.ico'),
-(233689, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'ed', 1, 0, 'favicon.ico'),
-(235648, ' <video width=\"150\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'bebe', 0, 0, 'favicon.ico'),
-(240647, 'ef', 'Mohammed ba', 0, 45267, 'favicon.ico'),
-(243548, 'm', 'Mohammed jaja', 7, 53181, 'favicon.ico'),
-(245572, '', 'Mohammed Janatiq', 0, 0, 'favicon.ico'),
-(245654, '', 'hr', 0, 0, 'favicon.ico'),
-(247107, '<iframe width=\"215\" src=\"//www.youtube.com/embed/Bzzp5Cay7DI\" frameborder=\"0\" allowfullscreen></iframe>', 'Mohammed Janatia', 0, 0, 'favicon.ico'),
-(249883, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 7, 0, 'favicon.ico'),
-(253764, '', 'Mohammed Janat', 1, 0, 'favicon.ico'),
-(254858, 'h', 'hello worlds', 2, 0, 'favicon.ico'),
-(256967, 'jh', 'hello world123', 0, 0, 'favicon.ico'),
-(258521, 'mooooooooooo', 'Mohammed jaja', 5, 85478, 'favicon.ico'),
-(262568, '', 'hr', 0, 0, 'favicon.ico'),
-(263861, 'eef', 'Mohammed jaja', 5, 53549, 'favicon.ico'),
-(271384, 'kk', 'hello world123', 0, 0, 'favicon.ico'),
-(272251, '', 'hello world', 0, 5950, 'favicon.ico'),
-(272271, 'hi', '', 0, 46121, 'favicon.ico'),
-(275505, '', 'hello worlds', 0, 0, 'favicon.ico'),
-(279891, 'wd', 'qwa', 0, 49603, 'favicon.ico'),
-(286362, 'as', 'Mohammed bad', 0, 45258, 'favicon.ico'),
-(287119, ' <video width=\"215\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed Janatia', 0, 0, 'favicon.ico'),
-(288027, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 0, 85469, 'favicon.ico'),
-(291710, 'zzzzzzzzzzzzzzzzzzzzzzzzzzz', 'qwa', 0, 49603, 'favicon.ico'),
-(292086, 'dqqqqqqqqqqqqqqq', 'qwa', 0, 49603, 'favicon.ico'),
-(293357, 'lk', 'Mohammed jaja', 13, 85499, 'favicon.ico'),
-(294861, 'e', 'wdawef', 0, 49703, 'favicon.ico'),
-(295257, 'how old you', 'Mohammed jaja', 0, 50103, 'favicon.ico'),
-(297991, '???', '???????', 1, 0, 'favicon.ico'),
-(302689, 'sdfd', 'loo', 0, 49603, 'favicon.ico'),
-(302873, '<img style=\"width: 150px;\" src=\"/upload/salma.PNG\">', 'Mohammed jaja', 15, 58603, 'favicon.ico'),
-(303320, '<img style=\"width: 150px;\" src=\"/upload/mu.jpg\">', 'heell', 0, 46119, 'favicon.ico'),
-(304510, 'wv', 'Mohammed ba', 0, 45334, 'favicon.ico'),
-(306796, '<img style=\"width: 150px;\" src=\"/upload/dwd.jpg\">', 'heell', 0, 46120, 'favicon.ico'),
-(307206, '<img style=\"max-height: 20px;max-width: 24px;\" style=\"width=20px;\" src=\"/emojey/emoii.gif\">', 'wda', 31, 57520, 'favicon.ico'),
-(311071, 'kip', 'Mohammed jaja', 6, 58503, 'favicon.ico'),
-(320183, 'h', 'hello world12', 0, 0, 'favicon.ico'),
-(322883, 'hi agin ', 'hr', 0, 0, 'favicon.ico'),
-(326856, 'hi lol', 'hr', 0, 0, 'favicon.ico'),
-(338251, 'hi', 'Mujanati vew', 0, 24044, 'mu.jpg'),
-(348410, 'ef', 'Mohammed ba', 0, 45848, 'favicon.ico'),
-(353752, 'ef', 'Mohammed bad', 1, 45219, 'favicon.ico'),
-(358601, '??', '???????', 0, 0, 'favicon.ico'),
-(359963, 'dv', '', 0, 45854, 'favicon.ico'),
-(366384, 'wd', 'qwa', 0, 49603, 'favicon.ico'),
-(370224, 'hi agin', '', 0, 46860, 'favicon.ico'),
-(370512, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 2, 54104, 'favicon.ico'),
-(374829, 'jh', 'hello world123', 0, 0, 'favicon.ico'),
-(377044, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'vavavs', 0, 0, 'favicon.ico'),
-(378105, 'sd', 'Mohammed bad', 0, 45266, 'favicon.ico'),
-(381942, 'hie', 'weweedca', 0, 49603, 'favicon.ico'),
-(401483, 'hi', 'Mohammed jaja', 0, 56608, 'favicon.ico'),
-(408217, 'rf', 'wdawefe', 0, 53603, 'favicon.ico'),
-(4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV\">\n          </video> \n          ', 'Mohammed janatia', 1, 0, 'favicon.ico'),
-(416149, 'qw', 'mohammed v5', 0, 46828, 'dwd.jpg'),
-(4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV'),
-(419093, 'hi', 'hello world123', 0, 0, 'favicon.ico');
+INSERT INTO hanitmsg (msg_id, mag_content, mag_creator, likes, time, img, comments) VALUES
+(30345, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 2, 54603, 'favicon.ico', 0),
+(33489, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/dwd.jpg\"></div>', 'bebe', 0, 0, 'favicon.ico', 0),
+(34524, 'he', 'hello worlds', 0, 0, 'favicon.ico', 0),
+(46351, 'as', 'Mohammedd cdawax', 1, 49603, 'favicon.ico', 0),
+(50103, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/se.jpg\"></div>', 'bebe', 0, 0, 'favicon.ico', 0),
+(53954, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 0, 0, 'favicon.ico', 0),
+(55575, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'vavavs', 0, 0, 'favicon.ico', 0),
+(58861, 'sq', 'hello world123', 0, 0, 'favicon.ico', 0),
+(67456, '', 'hr', 0, 0, 'favicon.ico', 0),
+(69384, '?? ?????', '???????', 0, 0, 'favicon.ico', 1),
+(71154, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/sdsdsdsd.png\"></div>', 'bebe', 0, 0, 'favicon.ico', 0),
+(72760, 'h', 'hello world12', 0, 0, 'favicon.ico', 0),
+(77128, '<img style=\"max-height: 20px;max-width: 21px;\" style=\"width=20px;\" src=\"/emojey/1604250333377.gif\">', '', 1, 0, 'favicon.ico', 0),
+(85040, 'wr', 'wdawefe', 0, 68285, 'favicon.ico', 0),
+(88918, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'Mohammed Janatia', 0, 0, 'favicon.ico', 0),
+(89300, 'he', 'hello worlds', 0, 0, 'favicon.ico', 0),
+(90314, '<img style=\"max-height: 20px;max-width: 21px;\" style=\"width=20px;\" src=\"/emojey/l68fiu8x_1007.gif\">', 'wda', 10, 58603, 'favicon.ico', 0),
+(91706, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'bebe', 3, 0, 'favicon.ico', 0),
+(98776, 'jamais', 'hello world1', 0, 0, 'favicon.ico', 0),
+(105411, ' <video width=\"220\"  controls>\n            <source src=\"/upload/videoplayback.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'agg s', 0, 0, 'favicon.ico', 0),
+(114245, '???', '???????', 0, 0, 'favicon.ico', 0),
+(116715, '??', '???????', 0, 0, 'favicon.ico', 0),
+(117985, 's', 'Mohammed bad', 0, 45249, 'favicon.ico', 0),
+(121005, 'hi', 'hello world123', 0, 0, 'favicon.ico', 0),
+(130571, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 0, 58603, 'favicon.ico', 0),
+(131704, 'kk', 'hello world123', 0, 0, 'favicon.ico', 0),
+(151430, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'helloworlde', 0, 0, 'favicon.ico', 0),
+(159239, '<iframe width=\"215\" src=\"//www.youtube.com/embed/Bzzp5Cay7DI\" frameborder=\"0\" allowfullscreen></iframe>', 'Mohammed Janatia', 0, 0, 'favicon.ico', 5),
+(160069, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'Mohammed Janatia', 1, 0, 'favicon.ico', 0),
+(160834, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 2, 0, 'favicon.ico', 0),
+(166752, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'ed', 1, 0, 'favicon.ico', 0),
+(168232, '<iframe width=\"215\" src=\"//www.youtube.com/embed/GeE6a8t7hXc\" frameborder=\"0\" allowfullscreen></iframe>', '', 0, 0, 'favicon.ico', 0),
+(170659, 'jamais', 'hello world1', 0, 0, 'favicon.ico', 0),
+(177371, 'eds', 'Mohammed ba', 0, 45851, 'favicon.ico', 0),
+(180026, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'heell', 0, 46119, 'favicon.ico', 0),
+(183197, 'hi', 'hello worlds', 0, 0, 'favicon.ico', 0),
+(184882, 'ge', 'hello worlds', 0, 0, 'favicon.ico', 0),
+(194930, '?? ?????', '???????', 0, 0, 'favicon.ico', 0),
+(198701, '<div><img style=\"width: 150px;\" src=\"/upload/sdsdsdsd.png\"></div>', 'bebe', 4, 0, 'favicon.ico', 0),
+(205069, 'as', 'mohammed v5', 0, 46850, 'favicon.ico', 0),
+(205189, 'qas', 'qwacx', 0, 0, 'favicon.ico', 0),
+(205942, 'ji', 'hello world12', 0, 0, 'favicon.ico', 0),
+(208008, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed Janatia', 0, 0, 'favicon.ico', 0),
+(208525, 'aaa', 'wdawefe', 0, 68819, 'favicon.ico', 0),
+(212537, 'ji', 'hello world12', 0, 0, 'favicon.ico', 0),
+(214746, 'fd', 'hello worlds', 0, 0, 'favicon.ico', 0),
+(216387, ' <video width=\"220\"  controls>\n            <source src=\"/upload/videoplayback.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'fffee', 1, 0, 'favicon.ico', 1),
+(216401, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 0, 0, 'favicon.ico', 0),
+(223228, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed Janat', 0, 0, 'favicon.ico', 0),
+(223721, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'vavavs', 0, 0, 'favicon.ico', 0),
+(233689, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'ed', 1, 0, 'favicon.ico', 0),
+(235648, ' <video width=\"150\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'bebe', 0, 0, 'favicon.ico', 0),
+(240647, 'ef', 'Mohammed ba', 0, 45267, 'favicon.ico', 0),
+(240757, 'qw', 'qwacx', 0, 0, 'favicon.ico', 0),
+(243548, 'm', 'Mohammed jaja', 7, 53181, 'favicon.ico', 0),
+(245572, '', 'Mohammed Janatiq', 0, 0, 'favicon.ico', 0),
+(245654, '', 'hr', 0, 0, 'favicon.ico', 0),
+(247107, '<iframe width=\"215\" src=\"//www.youtube.com/embed/Bzzp5Cay7DI\" frameborder=\"0\" allowfullscreen></iframe>', 'Mohammed Janatia', 0, 0, 'favicon.ico', 0),
+(249883, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/638a3626aa7a788.jpg\"></div>', 'Mohammed Janatia', 7, 0, 'favicon.ico', 0),
+(253764, '', 'Mohammed Janat', 1, 0, 'favicon.ico', 0),
+(254858, 'h', 'hello worlds', 2, 0, 'favicon.ico', 0),
+(256967, 'jh', 'hello world123', 0, 0, 'favicon.ico', 0),
+(258521, 'mooooooooooo', 'Mohammed jaja', 5, 85478, 'favicon.ico', 0),
+(261615, ' <video width=\"220\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'helloworlde', 0, 0, 'favicon.ico', 0),
+(262568, '', 'hr', 0, 0, 'favicon.ico', 0),
+(263861, 'eef', 'Mohammed jaja', 5, 53549, 'favicon.ico', 0),
+(268664, 'heloq', 'dsqa', 0, 0, 'favicon.ico', 0),
+(271384, 'kk', 'hello world123', 0, 0, 'favicon.ico', 0),
+(272251, '', 'hello world', 0, 5950, 'favicon.ico', 0),
+(272271, 'hi', '', 0, 46121, 'favicon.ico', 0),
+(275505, '', 'hello worlds', 0, 0, 'favicon.ico', 0),
+(279891, 'wd', 'qwa', 0, 49603, 'favicon.ico', 0),
+(286362, 'as', 'Mohammed bad', 0, 45258, 'favicon.ico', 0),
+(287119, ' <video width=\"215\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed Janatia', 0, 0, 'favicon.ico', 0),
+(288027, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 0, 85469, 'favicon.ico', 0),
+(291276, 'hell', 'hellowwswewefefwd', 0, 0, 'favicon.ico', 0),
+(291710, 'zzzzzzzzzzzzzzzzzzzzzzzzzzz', 'qwa', 0, 49603, 'favicon.ico', 0),
+(292086, 'dqqqqqqqqqqqqqqq', 'qwa', 0, 49603, 'favicon.ico', 0),
+(293357, 'lk', 'Mohammed jaja', 13, 85499, 'favicon.ico', 0),
+(294861, 'e', 'wdawef', 0, 49703, 'favicon.ico', 0),
+(295257, 'how old you', 'Mohammed jaja', 0, 50103, 'favicon.ico', 0),
+(297991, '???', '???????', 1, 0, 'favicon.ico', 8),
+(302689, 'sdfd', 'loo', 0, 49603, 'favicon.ico', 0),
+(302873, '<img style=\"width: 150px;\" src=\"/upload/salma.PNG\">', 'Mohammed jaja', 15, 58603, 'favicon.ico', 0),
+(303320, '<img style=\"width: 150px;\" src=\"/upload/mu.jpg\">', 'heell', 0, 46119, 'favicon.ico', 0),
+(304510, 'wv', 'Mohammed ba', 0, 45334, 'favicon.ico', 0),
+(306796, '<img style=\"width: 150px;\" src=\"/upload/dwd.jpg\">', 'heell', 0, 46120, 'favicon.ico', 0),
+(307206, '<img style=\"max-height: 20px;max-width: 24px;\" style=\"width=20px;\" src=\"/emojey/emoii.gif\">', 'wda', 31, 57520, 'favicon.ico', 0),
+(311071, 'kip', 'Mohammed jaja', 6, 58503, 'favicon.ico', 0),
+(320183, 'h', 'hello world12', 0, 0, 'favicon.ico', 0),
+(322883, 'hi agin ', 'hr', 0, 0, 'favicon.ico', 0),
+(326856, 'hi lol', 'hr', 0, 0, 'favicon.ico', 0),
+(332820, 'qas', 'qwacx', 0, 0, 'favicon.ico', 0),
+(338251, 'hi', 'Mujanati vew', 0, 24044, 'mu.jpg', 0),
+(348410, 'ef', 'Mohammed ba', 0, 45848, 'favicon.ico', 0),
+(353752, 'ef', 'Mohammed bad', 1, 45219, 'favicon.ico', 0),
+(358601, '??', '???????', 0, 0, 'favicon.ico', 0),
+(359963, 'dv', '', 0, 45854, 'favicon.ico', 0),
+(366384, 'wd', 'qwa', 0, 49603, 'favicon.ico', 0),
+(370224, 'hi agin', '', 0, 46860, 'favicon.ico', 0),
+(370512, ' <video width=\"110\"  controls>\n            <source src=\"/upload/mov_bbb.mp4\" type=\"video/mp4\">\n          </video> \n          ', 'Mohammed jaja', 2, 54104, 'favicon.ico', 0),
+(374829, 'jh', 'hello world123', 0, 0, 'favicon.ico', 0),
+(377044, '<div style=\"background-color: black;\n            width: 160px;\n            text-align: center;\n            height: 110px;\n            \"><img style=\"width: 129px;\n            height: 110px;\n            object-fit: contain;\" src=\"/upload/salma.PNG\"></div>', 'vavavs', 0, 0, 'favicon.ico', 0),
+(378105, 'sd', 'Mohammed bad', 0, 45266, 'favicon.ico', 0),
+(381942, 'hie', 'weweedca', 0, 49603, 'favicon.ico', 0),
+(384128, 'qw', 'qwacx', 0, 0, 'favicon.ico', 0),
+(401483, 'hi', 'Mohammed jaja', 0, 56608, 'favicon.ico', 0),
+(408217, 'rf', 'wdawefe', 0, 53603, 'favicon.ico', 0),
+(4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV\">\n          </video> \n          ', 'Mohammed janatia', 1, 0, 'favicon.ico', 0),
+(416149, 'qw', 'mohammed v5', 0, 46828, 'dwd.jpg', 0),
+(4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV),
+(419093, 'hi', 'hello world123', 0, 0, 'favicon.ico', 0);
 
 -- --------------------------------------------------------
 
@@ -288,7 +287,7 @@ CREATE TABLE join (
   classment_day int(11) DEFAULT NULL,
   nikname varchar(100) DEFAULT NULL,
   country varchar(50) DEFAULT NULL
-);
+) ;
 
 -- --------------------------------------------------------
 
@@ -303,7 +302,7 @@ CREATE TABLE mag_hanit_feedback (
   likes int(11) DEFAULT NULL,
   name varchar(100) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table mag_hanit_feedback
@@ -312,7 +311,16 @@ CREATE TABLE mag_hanit_feedback (
 INSERT INTO mag_hanit_feedback (feed_back_id, msg_id, comment, likes, name, img) VALUES
 (51, 159239, 'hi', 0, '0', 'favicon.ico'),
 (52, 159239, 'agin', 0, 'hello cv', 'favicon.ico'),
-(53, 55575, 'hell ', 0, '???????', 'favicon.ico');
+(54, 297991, 'he', 0, 'selle', 'favicon.ico'),
+(55, 297991, 'agin ', 0, 'selle', 'favicon.ico'),
+(56, 159239, 'we', 0, 'selle', 'favicon.ico'),
+(57, 297991, 'df', 0, 'mohamwq', 'favicon.ico'),
+(58, 159239, 'nice', 0, 'mohamwq', 'favicon.ico'),
+(59, 159239, 'kho', 0, 'hellowms', 'favicon.ico'),
+(60, 297991, 'her', 0, 'hellowms', 'favicon.ico'),
+(61, 297991, 'se', 0, 'hellowms', 'favicon.ico'),
+(65, 69384, 'agis', 3, 'fffee', 'favicon.ico'),
+(66, 216387, 've', 0, 'fffee', 'favicon.ico');
 
 -- --------------------------------------------------------
 
@@ -325,7 +333,7 @@ CREATE TABLE messages (
   title varchar(50) DEFAULT NULL,
   msg_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table messages
@@ -350,7 +358,7 @@ CREATE TABLE online (
 --
 
 INSERT INTO online (user_id, number) VALUES
-(1, 1);
+(1, 0);
 
 -- --------------------------------------------------------
 
@@ -371,8 +379,11 @@ CREATE TABLE onlinetable (
   fontcolor varchar(50) DEFAULT NULL,
   namecolor varchar(50) DEFAULT NULL,
   namebg varchar(50) DEFAULT NULL,
-  room_name varchar(100) DEFAULT NULL
-);
+  room_name varchar(100) DEFAULT NULL,
+  namkename varchar(100) DEFAULT NULL,
+  stats varchar(200) DEFAULT NULL,
+  notification varchar(50) DEFAULT NULL
+) ;
 
 -- --------------------------------------------------------
 
@@ -402,7 +413,7 @@ CREATE TABLE person (
   country varchar(50) DEFAULT NULL,
   statscolor varchar(50) DEFAULT NULL,
   counryNN varchar(100) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table person
@@ -534,7 +545,59 @@ INSERT INTO person (user_id, user_name, user_gmail, user_password, user_join_dat
 (3289, 'Mohammed hsre', 'Mohammed hsre@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '13:12:26', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'Mohammed hsre', 'ma.png', NULL, '??????'),
 (3290, 'hello cv', 'hello cv@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '13:13:33', '??? ????', NULL, 'salma.PNG', '#000000', '#ff3eff', '#000000', NULL, NULL, 'hello cv', 'ma.png', NULL, '??????'),
 (3292, '???????', '???????@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '15:29:18', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, '???????', 'ma.png', NULL, '??????'),
-(3293, 'wedsadc', 'wedsadc@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '16:53:6', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'wedsadc', 'ma.png', NULL, '??????');
+(3293, 'wedsadc', 'wedsadc@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '16:53:6', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'wedsadc', 'ma.png', NULL, '??????'),
+(3294, 'helloworlde', 'helloworlde@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '19:2:10', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'helloworlde', 'ma.png', NULL, '??????'),
+(3295, 'agg s', 'agg s@gmail.com', '', '2022/9/4', '157.60.0.1', 'Android', 0, '10:54:57', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'agg s', 'ma.png', NULL, '??????'),
+(3296, 'welcomed', 'welcomed@gmail.com', '', '2022/9/4', '157.60.0.1', 'Android', 0, '11:55:27', '??? ????', NULL, 'favicon.ico', '#000000', '#ffffff', '#000000', NULL, NULL, '?????????? ???????? ?????  ', 'ma.png', NULL, '??????'),
+(3298, '???? ???????', '???? ???????@gmail.com', '', '2022/9/4', '157.60.0.1', 'Android', 0, '12:27:50', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, '???? ???????', 'ma.png', NULL, '??????'),
+(3299, '???? ??', '???? ??@gmail.com', '', '2022/9/4', '157.60.0.1', 'Android', 0, '12:27:50', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, '???? ??', 'ma.png', NULL, '??????'),
+(3300, 'hellowie', 'hellowie@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '20:8:11', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowie', 'ma.png', NULL, '??????'),
+(3301, 'hellowiee', 'hellowiee@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '20:8:11', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowiee', 'ma.png', NULL, '??????'),
+(3302, 'hellowieeef', 'hellowieeef@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '20:37:21', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowieeef', 'ma.png', NULL, '??????'),
+(3303, 'hehehe', 'hehehe@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '20:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV', NULL, '??????'),
+(3304, 'heabas', 'heabas@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '21:6:10', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'heabas', 'ma.png', NULL, '??????'),
+(3305, 'heleoe', 'heleoe@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '21:16:50', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'heleoe', 'ma.png', NULL, '??????'),
+(3306, 'hellowieeefd', 'hellowieeefd@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '21:27:17', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowieeefd', 'ma.png', NULL, '??????'),
+(3307, 'wdws', 'wdws@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '21:37:11', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'wdws', 'ma.png', NULL, '??????'),
+(3308, 'bavabs', 'bavabs@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '21:37:11', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'bavabs', 'ma.png', NULL, '??????'),
+(3309, 'wdwdwd', 'wdwdwd@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '21:39:54', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'wdwdwd', 'ma.png', NULL, '??????'),
+(3310, 'asx', 'asx@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '21:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVNULL, '??????'),
+(3311, 'selle', 'selle@gmail.com', '', '2022/9/1', '157.60.0.1', 'Android', 0, '23:0:28', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'selle', 'ma.png', NULL, '??????'),
+(3312, 'mohamwq', 'mohamwq@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '15:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV', NULL, '??????'),
+(3313, 'hellowjsd', 'hellowjsd@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '15:59:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowjsd', 'ma.png', NULL, '??????'),
+(3314, 'hellowms', 'hellowms@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '16:10:19', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowms', 'ma.png', NULL, '??????'),
+(3315, 'fffee', 'fffee@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '16:10:19', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'fffee', 'ma.png', NULL, '??????'),
+(3316, 'hellowe', 'hellowe@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '17:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV', NULL, '??????'),
+(3317, 'helwq', 'helwq@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '17:56:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVNULL, '??????'),
+(3320, 'hellowqaz', 'hellowqaz@gmail.com', '', '2022/9/2', '157.60.0.1', 'Android', 0, '22:4:15', 'hello world', NULL, 'favicon.ico', '#000000', '#ffffff', '#000000', NULL, NULL, 'hellowqaz', 'ma.png', NULL, '??????'),
+(3321, 'twoq', 'twoq@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '10:35:27', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'twoq', 'ma.png', NULL, '??????'),
+(3323, 'dsqa', 'dsqa@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '10:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVNULL, '??????'),
+(3329, 'qwacx', 'qwacx@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '11:6:0', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'qwacx', 'ma.png', NULL, '??????'),
+(3332, 'qaxcda', 'qaxcda@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '11:6:0', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'qaxcda', 'ma.png', NULL, '??????'),
+(3333, 'jons', 'jons@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '11:6:0', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'jons', 'ma.png', NULL, '??????'),
+(3334, 'hloka', 'hloka@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '11:6:0', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hloka', 'ma.png', NULL, '??????'),
+(3335, 'hloka3ww', 'hloka3ww@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '11:6:0', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hloka3ww', 'ma.png', NULL, '??????'),
+(3336, 'hloka3wwed', 'hloka3wwed@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '11:6:0', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hloka3wwed', 'ma.png', NULL, '??????'),
+(3337, 'wqas', 'wqas@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:26:8', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'wqas', 'ma.png', NULL, '??????'),
+(3338, 'edsq', 'edsq@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:28:56', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'edsq', 'ma.png', NULL, '??????'),
+(3339, 'wqaseq', 'wqaseq@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:28:56', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'wqaseq', 'ma.png', NULL, '??????'),
+(3340, 'hellow', 'hellow@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:28:56', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellow', 'ma.png', NULL, '??????'),
+(3341, 'hellowws', 'hellowws@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:28:56', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowws', 'ma.png', NULL, '??????'),
+(3342, 'hellowwswe', 'hellowwswe@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVpng', NULL, '??????'),
+(3343, 'efnsd', 'efnsd@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVNULL, '??????'),
+(3344, 'hellowwswew', 'hellowwswew@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZVpng', NULL, '??????'),
+(3345, 'efnsdef', 'efnsdef@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'efnsdef', 'ma.png', NULL, '??????'),
+(3346, 'hellowwswewd', 'hellowwswewd@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowwswewd', 'ma.png', NULL, '??????'),
+(3347, 'hellowwswewderer', 'hellowwswewderer@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowwswewderer', 'ma.png', NULL, '??????'),
+(3348, 'efnsdefdf', 'efnsdefdf@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'efnsdefdf', 'ma.png', NULL, '??????'),
+(3349, 'hellowwswewdereref', 'hellowwswewdereref@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowwswewdereref', 'ma.png', NULL, '??????'),
+(3350, 'hellowwswewef', 'hellowwswewef@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowwswewef', 'ma.png', NULL, '??????'),
+(3351, 'efnsdefdfwd', 'efnsdefdfwd@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'efnsdefdfwd', 'ma.png', NULL, '??????'),
+(3352, 'efnsdefdfwdef', 'efnsdefdfwdef@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'efnsdefdfwdef', 'ma.png', NULL, '??????'),
+(3353, 'efnsdefdfwdefsc', 'efnsdefdfwdefsc@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'efnsdefdfwdefsc', 'ma.png', NULL, '??????'),
+(3354, 'hellowwswewefef', 'hellowwswewefef@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '14:53:15', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowwswewefef', 'ma.png', NULL, '??????'),
+(3355, 'efnsdefdfwdefsceff', 'efnsdefdfwdefsceff@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '16:20:13', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'efnsdefdfwdefsceff', 'ma.png', NULL, '??????'),
+(3356, 'hellowwswewefefwd', 'hellowwswewefefwd@gmail.com', '', '2022/9/3', '157.60.0.1', 'Android', 0, '16:20:13', '??? ????', NULL, 'favicon.ico', '#000000 ', '#ffffff ', '#000000 ', NULL, NULL, 'hellowwswewefefwd', 'ma.png', NULL, '??????');
 
 -- --------------------------------------------------------
 
@@ -553,7 +616,7 @@ CREATE TABLE record (
   source varchar(50) DEFAULT NULL,
   invation varchar(20) DEFAULT NULL,
   time varchar(20) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table record
@@ -1968,7 +2031,354 @@ INSERT INTO record (user_id, stats, momber, style, ip, national, device, source,
 (15697, '???', 'wedsadc', 'wedsadc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 17:09:46'),
 (15698, '???', 'wedsadc', 'wedsadc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 17:09:47'),
 (15699, '???', 'wedsadc', 'wedsadc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 17:09:54'),
-(15700, '???', 'wedsadc', 'wedsadc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 17:09:54');
+(15700, '???', 'wedsadc', 'wedsadc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 17:09:54'),
+(15701, '???', 'wedsadc', 'wedsadc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 18:56:44'),
+(15702, '???', 'wedsadc', 'wedsadc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 19:01:46'),
+(15703, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 19:02:23'),
+(15704, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 19:05:02'),
+(15705, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 19:14:17'),
+(15706, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 19:14:50'),
+(15707, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 19:15:34'),
+(15708, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-11 19:16:17'),
+(15709, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-12 22:35:45'),
+(15710, '???', 'helloworlde', 'helloworlde', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-12 23:00:24'),
+(15711, '???', 'agg s', 'agg s', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 11:09:34'),
+(15712, '???', 'agg s', 'agg s', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 11:10:34'),
+(15713, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 11:56:59'),
+(15714, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 11:58:18'),
+(15715, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 11:58:28'),
+(15716, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:05:43'),
+(15717, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:06:06'),
+(15718, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:06:40'),
+(15719, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:07:36'),
+(15720, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:09:47'),
+(15721, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:12:32'),
+(15722, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:13:01'),
+(15723, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:13:35'),
+(15724, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:14:44'),
+(15725, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:15:10'),
+(15726, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:21:55'),
+(15727, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:22:59'),
+(15728, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:24:08'),
+(15729, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:24:44'),
+(15730, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 12:27:59'),
+(15731, '???', 'welcomed', 'welcomed', '127.0.0.1', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 16:33:30'),
+(15732, '???', 'agg s', 'agg s', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:24:27'),
+(15733, '???', 'agg s', 'agg s', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:42:34'),
+(15734, '???', '???? ???????', '???? ???????', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:43:46'),
+(15735, '???', '???? ???????', '???? ???????', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:51:48'),
+(15736, '???', '???? ???????', '???? ???????', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:52:03'),
+(15737, '???', '???? ??', '???? ??', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:52:14'),
+(15738, '???', '???? ??', '???? ??', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:58:59'),
+(15739, '???', '???? ???????', '???? ???????', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-13 20:59:03'),
+(15740, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-14 18:59:15'),
+(15741, '???', 'welcomed', 'welcomed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-14 19:04:15'),
+(15742, '???', 'hellowie', 'hellowie', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:08:28'),
+(15743, '???', 'hellowie', 'hellowie', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:31:30'),
+(15744, '???', 'hellowiee', 'hellowiee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:35:56'),
+(15745, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:37:35'),
+(15746, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:44:20'),
+(15747, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:46:06'),
+(15748, '???', 'hehehe', 'hehehe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:51:01'),
+(15749, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:54:26'),
+(15750, '???', 'hehehe', 'hehehe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:54:28'),
+(15751, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:54:35'),
+(15752, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:56:20'),
+(15753, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 20:56:53'),
+(15754, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:00:46'),
+(15755, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:06:25'),
+(15756, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:08:19'),
+(15757, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:09:07'),
+(15758, '???', 'hellowieeef', 'hellowieeef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:09:37'),
+(15759, '???', 'hehehe', 'hehehe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:09:56'),
+(15760, '???', 'heabas', 'heabas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:10:12'),
+(15761, '???', 'hehehe', 'hehehe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:16:14'),
+(15762, '???', 'heabas', 'heabas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:16:18'),
+(15763, '???', 'heabas', 'heabas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:17:17'),
+(15764, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:17:32'),
+(15765, '???', 'heabas', 'heabas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:23:04'),
+(15766, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:23:07'),
+(15767, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:23:33'),
+(15768, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:24:16'),
+(15769, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:24:25'),
+(15770, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:24:31'),
+(15771, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:24:57'),
+(15772, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:26:51'),
+(15773, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:27:26'),
+(15774, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:27:42'),
+(15775, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:28:53'),
+(15776, '???', 'heleoe', 'heleoe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:28:58'),
+(15777, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:29:33'),
+(15778, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:29:37'),
+(15779, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:30:39'),
+(15780, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:30:52'),
+(15781, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:32:13'),
+(15782, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:32:22'),
+(15783, '???', 'hellowieeefd', 'hellowieeefd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:33:34'),
+(15784, '???', 'wdws', 'wdws', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:37:21'),
+(15785, '???', 'bavabs', 'bavabs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:37:33'),
+(15786, '???', 'wdws', 'wdws', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:39:31'),
+(15787, '???', 'bavabs', 'bavabs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:39:33'),
+(15788, '???', 'bavabs', 'bavabs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:40:02'),
+(15789, '???', 'wdwdwd', 'wdwdwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:40:20'),
+(15790, '???', 'wdwdwd', 'wdwdwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:40:28'),
+(15791, '???', 'bavabs', 'bavabs', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:40:30'),
+(15792, '???', 'wdwdwd', 'wdwdwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:40:42'),
+(15793, '???', 'wdwdwd', 'wdwdwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:42:29'),
+(15794, '???', 'wdwdwd', 'wdwdwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:43:00'),
+(15795, '???', 'asx', 'asx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 21:43:13'),
+(15796, '???', 'wdwdwd', 'wdwdwd', '127.0.0.1', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 22:55:36'),
+(15797, '???', 'asx', 'asx', '127.0.0.1', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 22:55:36'),
+(15798, '???', 'asx', 'asx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 22:57:18'),
+(15799, '???', 'asx', 'asx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 22:59:55'),
+(15800, '???', 'asx', 'asx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 23:00:42'),
+(15801, '???', 'selle', 'selle', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 23:01:36'),
+(15802, '???', 'asx', 'asx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 23:01:59'),
+(15803, '???', 'selle', 'selle', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 23:02:05'),
+(15804, '???', 'asx', 'asx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 23:02:09'),
+(15805, '???', 'asx', 'asx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-17 23:02:18'),
+(15806, '???', 'selle', 'selle', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:16:45'),
+(15807, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:50:11'),
+(15808, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:50:43'),
+(15809, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:50:57'),
+(15810, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:52:20'),
+(15811, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:52:52'),
+(15812, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:54:26'),
+(15813, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:54:59'),
+(15814, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:58:55'),
+(15815, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 15:59:22'),
+(15816, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:07:18'),
+(15817, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:07:26'),
+(15818, '???', 'hellowjsd', 'hellowjsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:08:31'),
+(15819, '???', 'mohamwq', 'mohamwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:09:55'),
+(15820, '???', 'hellowjsd', 'hellowjsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:09:56'),
+(15821, '???', 'hellowjsd', 'hellowjsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:10:30'),
+(15822, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:10:40'),
+(15823, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:12:47'),
+(15824, '???', 'hellowjsd', 'hellowjsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:12:50'),
+(15825, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:12:57');
+INSERT INTO record (user_id, stats, momber, style, ip, national, device, source, invation, time) VALUES
+(15826, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:13:55'),
+(15827, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:14:50'),
+(15828, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:15:31'),
+(15829, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:15:39'),
+(15830, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:16:22'),
+(15831, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:16:29'),
+(15832, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:17:21'),
+(15833, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:17:39'),
+(15834, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:18:05'),
+(15835, '???', 'hellowms', 'hellowms', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 16:18:41'),
+(15836, '???', 'fffee', 'fffee', '127.0.0.1', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:28:14'),
+(15837, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:34:02'),
+(15838, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:36:08'),
+(15839, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:36:08'),
+(15840, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:36:54'),
+(15841, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:39:06'),
+(15842, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:39:27'),
+(15843, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:39:35'),
+(15844, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:41:53'),
+(15845, '???', 'fffee', 'fffee', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:42:02'),
+(15846, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:46:31'),
+(15847, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:47:57'),
+(15848, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:48:10'),
+(15849, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:49:08'),
+(15850, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:49:38'),
+(15851, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:50:22'),
+(15852, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:53:03'),
+(15853, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:53:15'),
+(15854, '???', 'hellowe', 'hellowe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:53:55'),
+(15855, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:57:12'),
+(15856, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 17:59:52'),
+(15857, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:21:38'),
+(15858, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:28:56'),
+(15859, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:37:53'),
+(15860, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:38:29'),
+(15861, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:40:55'),
+(15862, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:41:08'),
+(15863, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:43:43'),
+(15864, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:46:03'),
+(15865, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:48:19'),
+(15866, '???', 'helwq', 'helwq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 18:50:02'),
+(15867, '???', 'helwq', 'helwq', '127.0.0.1', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 21:57:41'),
+(15868, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:04:30'),
+(15869, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:05:44'),
+(15870, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:05:57'),
+(15871, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:18:57'),
+(15872, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:19:16'),
+(15873, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:20:33'),
+(15874, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:20:43'),
+(15875, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:28:17'),
+(15876, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:29:04'),
+(15877, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:29:37'),
+(15878, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:30:48'),
+(15879, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:31:51'),
+(15880, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:32:55'),
+(15881, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:35:44'),
+(15882, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:35:48'),
+(15883, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:36:04'),
+(15884, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:36:10'),
+(15885, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:36:23'),
+(15886, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:36:30'),
+(15887, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:37:14'),
+(15888, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:37:19'),
+(15889, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:38:00'),
+(15890, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:38:11'),
+(15891, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:38:18'),
+(15892, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:39:31'),
+(15893, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:52:49'),
+(15894, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:53:26'),
+(15895, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:54:14'),
+(15896, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:54:19'),
+(15897, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:56:30'),
+(15898, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-18 22:56:39'),
+(15899, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:21:54'),
+(15900, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:26:44'),
+(15901, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:26:50'),
+(15902, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:34:45'),
+(15903, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:35:36'),
+(15904, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:36:00'),
+(15905, '???', 'hellowqaz', 'hellowqaz', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:40:12'),
+(15906, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:40:14'),
+(15907, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:40:29'),
+(15908, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:41:58'),
+(15909, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:42:34'),
+(15910, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:47:31'),
+(15911, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:48:07'),
+(15912, '???', 'twoq', 'twoq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:49:35'),
+(15913, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:49:55'),
+(15914, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 10:54:01'),
+(15915, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:00:21'),
+(15916, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:03:44'),
+(15917, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:03:49'),
+(15918, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:05:38'),
+(15919, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:06:08'),
+(15920, '???', 'qwacx', 'qwacx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:06:36'),
+(15921, '???', 'dsqa', 'dsqa', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:08:01'),
+(15922, '???', 'qaxcda', 'qaxcda', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:08:37'),
+(15923, '???', 'qwacx', 'qwacx', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:09:12'),
+(15924, '???', 'qaxcda', 'qaxcda', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:11:30'),
+(15925, '???', 'qaxcda', 'qaxcda', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:11:37'),
+(15926, '???', 'qaxcda', 'qaxcda', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:21:12'),
+(15927, '???', 'qaxcda', 'qaxcda', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:21:19'),
+(15928, '???', 'jons', 'jons', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:21:44'),
+(15929, '???', 'qaxcda', 'qaxcda', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:22:36'),
+(15930, '???', 'jons', 'jons', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:22:38'),
+(15931, '???', 'jons', 'jons', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:22:46'),
+(15932, '???', 'hloka', 'hloka', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:22:57'),
+(15933, '???', 'jons', 'jons', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:23:43'),
+(15934, '???', 'hloka', 'hloka', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:23:45'),
+(15935, '???', 'hloka', 'hloka', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:24:39'),
+(15936, '???', 'hloka3ww', 'hloka3ww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:24:44'),
+(15937, '???', 'hloka', 'hloka', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:25:53'),
+(15938, '???', 'hloka3ww', 'hloka3ww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:25:55'),
+(15939, '???', 'hloka3ww', 'hloka3ww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:26:06'),
+(15940, '???', 'hloka3wwed', 'hloka3wwed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 11:26:16'),
+(15941, '???', 'hloka3wwed', 'hloka3wwed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 12:59:03'),
+(15942, '???', 'hloka3ww', 'hloka3ww', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 13:13:55'),
+(15943, '???', 'hloka3wwed', 'hloka3wwed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:17:35'),
+(15944, '???', 'hloka3wwed', 'hloka3wwed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:24:51'),
+(15945, '???', 'hloka3wwed', 'hloka3wwed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:26:16'),
+(15946, '???', 'wqas', 'wqas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:26:25'),
+(15947, '???', 'wqas', 'wqas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:28:18'),
+(15948, '???', 'hloka3wwed', 'hloka3wwed', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:28:21'),
+(15949, '???', 'edsq', 'edsq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:29:29'),
+(15950, '???', 'wqas', 'wqas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:29:33'),
+(15951, '???', 'wqas', 'wqas', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:38:43'),
+(15952, '???', 'edsq', 'edsq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:38:46'),
+(15953, '???', 'edsq', 'edsq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:38:54'),
+(15954, '???', 'wqaseq', 'wqaseq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:39:04'),
+(15955, '???', 'wqaseq', 'wqaseq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:40:13'),
+(15956, '???', 'edsq', 'edsq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:40:16'),
+(15957, '???', 'wqaseq', 'wqaseq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:41:48'),
+(15958, '???', 'hellow', 'hellow', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:41:54'),
+(15959, '???', 'wqaseq', 'wqaseq', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:44:34'),
+(15960, '???', 'hellow', 'hellow', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:44:36'),
+(15961, '???', 'hellow', 'hellow', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:44:46'),
+(15962, '???', 'hellowws', 'hellowws', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:44:57'),
+(15963, '???', 'hellow', 'hellow', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:46:27'),
+(15964, '???', 'hellowws', 'hellowws', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:46:29'),
+(15965, '???', 'hellowws', 'hellowws', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:47:36'),
+(15966, '???', 'hellowwswe', 'hellowwswe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:47:43'),
+(15967, '???', 'hellowws', 'hellowws', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:49:21'),
+(15968, '???', 'hellowwswe', 'hellowwswe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:49:23'),
+(15969, '???', 'hellowwswe', 'hellowwswe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:50:05'),
+(15970, '???', 'efnsd', 'efnsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:50:12'),
+(15971, '???', 'hellowwswe', 'hellowwswe', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:51:45'),
+(15972, '???', 'efnsd', 'efnsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:51:47'),
+(15973, '???', 'efnsd', 'efnsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:51:53'),
+(15974, '???', 'hellowwswew', 'hellowwswew', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:52:01'),
+(15975, '???', 'efnsd', 'efnsd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:52:42'),
+(15976, '???', 'hellowwswew', 'hellowwswew', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:52:43'),
+(15977, '???', 'hellowwswew', 'hellowwswew', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:53:26'),
+(15978, '???', 'efnsdef', 'efnsdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:53:48'),
+(15979, '???', 'hellowwswew', 'hellowwswew', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:54:47'),
+(15980, '???', 'efnsdef', 'efnsdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:54:49'),
+(15981, '???', 'efnsdef', 'efnsdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:54:54'),
+(15982, '???', 'hellowwswewderer', 'hellowwswewderer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:55:47'),
+(15983, '???', 'efnsdef', 'efnsdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:56:55'),
+(15984, '???', 'hellowwswewderer', 'hellowwswewderer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 14:56:57'),
+(15985, '???', 'hellowwswewderer', 'hellowwswewderer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 15:57:25'),
+(15986, '???', 'efnsdefdf', 'efnsdefdf', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 15:57:31'),
+(15987, '???', 'hellowwswewderer', 'hellowwswewderer', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 15:58:59'),
+(15988, '???', 'efnsdefdf', 'efnsdefdf', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 15:59:01'),
+(15989, '???', 'efnsdefdf', 'efnsdefdf', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 15:59:21'),
+(15990, '???', 'hellowwswewdereref', 'hellowwswewdereref', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 15:59:28'),
+(15991, '???', 'efnsdefdf', 'efnsdefdf', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:02:45'),
+(15992, '???', 'hellowwswewdereref', 'hellowwswewdereref', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:02:47'),
+(15993, '???', 'hellowwswewdereref', 'hellowwswewdereref', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:02:54'),
+(15994, '???', 'hellowwswewef', 'hellowwswewef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:03:08'),
+(15995, '???', 'hellowwswewdereref', 'hellowwswewdereref', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:05:59'),
+(15996, '???', 'hellowwswewef', 'hellowwswewef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:06:02'),
+(15997, '???', 'hellowwswewef', 'hellowwswewef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:06:12'),
+(15998, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:07:45'),
+(15999, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:12:14'),
+(16000, '???', 'hellowwswewef', 'hellowwswewef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:12:16'),
+(16001, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:12:29'),
+(16002, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:12:32'),
+(16003, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:12:47'),
+(16004, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:12:47'),
+(16005, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:12:56'),
+(16006, '???', 'efnsdefdfwdefsc', 'efnsdefdfwdefsc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:13:02'),
+(16007, '???', 'efnsdefdfwdef', 'efnsdefdfwdef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:13:56'),
+(16008, '???', 'efnsdefdfwdefsc', 'efnsdefdfwdefsc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:13:59'),
+(16009, '???', 'efnsdefdfwdefsc', 'efnsdefdfwdefsc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:15:50'),
+(16010, '???', 'hellowwswewefef', 'hellowwswewefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:15:56'),
+(16011, '???', 'efnsdefdfwdefsc', 'efnsdefdfwdefsc', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:19:30'),
+(16012, '???', 'hellowwswewefef', 'hellowwswewefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:19:31'),
+(16013, '???', 'hellowwswewefef', 'hellowwswewefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:22:50'),
+(16014, '???', 'efnsdefdfwdefsceff', 'efnsdefdfwdefsceff', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:22:56'),
+(16015, '???', 'efnsdefdfwdefsceff', 'efnsdefdfwdefsceff', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:24:10'),
+(16016, '???', 'hellowwswewefef', 'hellowwswewefef', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:24:12'),
+(16017, '???', 'efnsdefdfwdefsceff', 'efnsdefdfwdefsceff', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:24:28'),
+(16018, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:24:34'),
+(16019, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:25:14'),
+(16020, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:25:25'),
+(16021, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:27:01'),
+(16022, '???', 'efnsdefdfwdefsceff', 'efnsdefdfwdefsceff', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:27:03'),
+(16023, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:27:08'),
+(16024, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:32:05'),
+(16025, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:32:34'),
+(16026, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:33:56'),
+(16027, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:34:26'),
+(16028, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:35:38'),
+(16029, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:35:44'),
+(16030, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:37:02'),
+(16031, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:37:07'),
+(16032, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:37:42'),
+(16033, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:38:09'),
+(16034, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:39:27'),
+(16035, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:39:36'),
+(16036, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:40:26'),
+(16037, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:40:31'),
+(16038, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:41:07'),
+(16039, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:41:16'),
+(16040, '???', '???????', '???????', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:44:56'),
+(16041, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:45:07'),
+(16042, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:46:30'),
+(16043, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:48:51'),
+(16044, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:49:00'),
+(16045, '???', '???????', '???????', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:49:16'),
+(16046, '???', 'hellowwswewefefwd', 'hellowwswewefefwd', '192.168.1.112', 'MA', 'Android', 'Chrome Mobile', '????? ??????', '2022-10-19 16:49:20');
 
 -- --------------------------------------------------------
 
@@ -1989,14 +2399,14 @@ CREATE TABLE room (
   voice varchar(20) DEFAULT NULL,
   img varchar(100) DEFAULT NULL,
   length int(11) DEFAULT NULL CHECK (length >= 0)
-);
+) ;
 
 --
 -- Dumping data for table room
 --
 
 INSERT INTO room (room_id, room_name, room_capacity, romm_admin, description, welcomemsg, password, resLike, voiceLike, voice, img, length) VALUES
-(1, '?????? ?????? ??? 1', 2, 'admin', '???? ????', '? ????????????????????????????‘? ????? ??????? ????????????', '', 20, 20, '', 'favicon.ico', 8),
+(1, '?????? ?????? ??? 1', 2, 'admin', '???? ????', '? ????????????????????????????‘? ????? ??????? ????????????', '', 20, 20, '', 'favicon.ico', 0),
 (3, '?????? ??????3\n', 4, 'admin', '???? ????', NULL, NULL, NULL, NULL, NULL, 'favicon.ico', 0),
 (4, '?????? ??????4\n', 8, 'admin', '???? ????', NULL, NULL, NULL, NULL, NULL, 'dwd.jpg', 0),
 (5, '?????? ??????5\n', 3, 'admin', '???? ????', NULL, NULL, NULL, NULL, NULL, 'favicon.ico', 0),
@@ -2019,7 +2429,7 @@ CREATE TABLE shorts (
   short varchar(50) DEFAULT NULL,
   short_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table shorts
@@ -2047,7 +2457,7 @@ CREATE TABLE stats (
   room varchar(50) DEFAULT NULL,
   ip varchar(20) DEFAULT NULL,
   time varchar(50) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table stats
@@ -2101,7 +2511,7 @@ CREATE TABLE website_control (
   notification_likes int(11) DEFAULT NULL,
   send_img_video_likes int(11) DEFAULT NULL,
   change_stats_likes int(11) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table website_control
@@ -2122,7 +2532,7 @@ CREATE TABLE world (
   ip varchar(30) DEFAULT NULL,
   type varchar(50) DEFAULT NULL,
   word varchar(50) DEFAULT NULL
-);
+) ;
 
 --
 -- Dumping data for table world
@@ -2276,7 +2686,7 @@ ALTER TABLE boot
 -- AUTO_INCREMENT for table chat
 --
 ALTER TABLE chat
-  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=746;
+  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=805;
 
 --
 -- AUTO_INCREMENT for table clasment
@@ -2294,7 +2704,7 @@ ALTER TABLE join
 -- AUTO_INCREMENT for table mag_hanit_feedback
 --
 ALTER TABLE mag_hanit_feedback
-  MODIFY feed_back_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY feed_back_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table messages
@@ -2312,13 +2722,13 @@ ALTER TABLE online
 -- AUTO_INCREMENT for table person
 --
 ALTER TABLE person
-  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3294;
+  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3357;
 
 --
 -- AUTO_INCREMENT for table record
 --
 ALTER TABLE record
-  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15701;
+  MODIFY user_id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16047;
 
 --
 -- AUTO_INCREMENT for table room
@@ -2355,6 +2765,3 @@ ALTER TABLE mag_hanit_feedback
   ADD CONSTRAINT mag_hanit_feedback_ibfk_1 FOREIGN KEY (msg_id) REFERENCES hanitmsg (msg_id);
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
