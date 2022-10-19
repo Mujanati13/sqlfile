@@ -1,9 +1,26 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 19, 2022 at 08:36 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
+--
+-- Database: chatdb_v1
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table block
+--
 
 CREATE TABLE block (
   id int(11) NOT NULL,
   blocklist varchar(40) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table block
@@ -36,7 +53,7 @@ CREATE TABLE boot (
   likes int(11) DEFAULT NULL,
   pin_room varchar(50) DEFAULT NULL,
   photo varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table boot
@@ -60,7 +77,7 @@ CREATE TABLE chat (
   msg varchar(1000) DEFAULT NULL,
   timen int(11) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -98,7 +115,7 @@ CREATE TABLE clasment (
   left_mic varchar(50) DEFAULT NULL,
   active_mic varchar(50) DEFAULT NULL,
   control_website varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table clasment
@@ -125,7 +142,7 @@ CREATE TABLE exitero (
   img varchar(50) DEFAULT NULL,
   stats varchar(200) DEFAULT NULL,
   nikename varchar(100) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -141,7 +158,7 @@ CREATE TABLE hanitmsg (
   time int(11) DEFAULT NULL,
   img varchar(150) DEFAULT NULL,
   comments int(11) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table hanitmsg
@@ -287,7 +304,7 @@ CREATE TABLE join (
   classment_day int(11) DEFAULT NULL,
   nikname varchar(100) DEFAULT NULL,
   country varchar(50) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -302,7 +319,7 @@ CREATE TABLE mag_hanit_feedback (
   likes int(11) DEFAULT NULL,
   name varchar(100) DEFAULT NULL,
   img varchar(100) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table mag_hanit_feedback
@@ -333,7 +350,7 @@ CREATE TABLE messages (
   title varchar(50) DEFAULT NULL,
   msg_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table messages
@@ -383,7 +400,7 @@ CREATE TABLE onlinetable (
   namkename varchar(100) DEFAULT NULL,
   stats varchar(200) DEFAULT NULL,
   notification varchar(50) DEFAULT NULL
-) ;
+);
 
 -- --------------------------------------------------------
 
@@ -413,7 +430,7 @@ CREATE TABLE person (
   country varchar(50) DEFAULT NULL,
   statscolor varchar(50) DEFAULT NULL,
   counryNN varchar(100) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table person
@@ -616,7 +633,7 @@ CREATE TABLE record (
   source varchar(50) DEFAULT NULL,
   invation varchar(20) DEFAULT NULL,
   time varchar(20) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table record
@@ -2399,7 +2416,7 @@ CREATE TABLE room (
   voice varchar(20) DEFAULT NULL,
   img varchar(100) DEFAULT NULL,
   length int(11) DEFAULT NULL CHECK (length >= 0)
-) ;
+);
 
 --
 -- Dumping data for table room
@@ -2429,7 +2446,7 @@ CREATE TABLE shorts (
   short varchar(50) DEFAULT NULL,
   short_content varchar(500) DEFAULT NULL,
   type varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table shorts
@@ -2457,7 +2474,7 @@ CREATE TABLE stats (
   room varchar(50) DEFAULT NULL,
   ip varchar(20) DEFAULT NULL,
   time varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table stats
@@ -2511,7 +2528,7 @@ CREATE TABLE website_control (
   notification_likes int(11) DEFAULT NULL,
   send_img_video_likes int(11) DEFAULT NULL,
   change_stats_likes int(11) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table website_control
@@ -2532,7 +2549,7 @@ CREATE TABLE world (
   ip varchar(30) DEFAULT NULL,
   type varchar(50) DEFAULT NULL,
   word varchar(50) DEFAULT NULL
-) ;
+);
 
 --
 -- Dumping data for table world
@@ -2764,4 +2781,3 @@ ALTER TABLE world
 ALTER TABLE mag_hanit_feedback
   ADD CONSTRAINT mag_hanit_feedback_ibfk_1 FOREIGN KEY (msg_id) REFERENCES hanitmsg (msg_id);
 COMMIT;
-
